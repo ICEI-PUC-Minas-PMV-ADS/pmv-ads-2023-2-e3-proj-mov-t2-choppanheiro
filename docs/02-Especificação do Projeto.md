@@ -8,7 +8,11 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Luís Santos, de 28 anos, é um analista de marketing. Como entusiasta de happy hour, ele adora sair com os amigos para bares locais depois do trabalho. Luís deseja poder escanear o código QR da conta do bar para agilizar o processo de divisão da conta entre seus amigos. Além disso, ele valoriza ver as promoções e ofertas especiais do bar para economizar dinheiro e aproveitar ao máximo o momento. Luís também acha importante poder adicionar itens à conta do grupo para garantir que todos os pedidos sejam considerados na divisão final.
+
+Isabela Ferreira, com 25 anos, é uma estudante de gastronomia. Como amante da culinária, ela gosta de experimentar diferentes bares locais com os amigos. Isabela deseja poder tirar fotos dos pratos no aplicativo para registrar os itens pedidos e facilitar a divisão precisa da conta. Além disso, ela valoriza receber sugestões de bares locais baseadas em avaliações gastronômicas, ajudando-a a descobrir novos lugares para experimentar com seus amigos. Isabela também quer a opção de dividir igualmente ou de acordo com o que cada um consumiu para atender às diferentes preferências de compartilhamento do grupo.
+
+Rafael Oliveira, de 32 anos, é um empreendedor. Como alguém que gosta de socializar, ele adora organizar encontros com amigos em bares locais para ampliar sua rede de contatos. Rafael deseja criar um evento no aplicativo e convidar seus amigos para coordenar esses encontros de maneira mais eficiente. Além disso, ele valoriza a capacidade de verificar o histórico de encontros anteriores para lembrar onde foram e como foram divididos os gastos em cada evento. Rafael também acha importante poder incluir uma nota ou comentário junto à divisão da conta para manter a transparência com seus amigos.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
