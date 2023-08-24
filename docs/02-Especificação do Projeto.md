@@ -28,8 +28,17 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Luís Santos         | quero poder escanear o código QR da conta do bar           | para agilizar o processo de divisão da conta entre meus amigos.               |
+|Luís Santos         | quero ver as promoções e ofertas especiais do bar                | para economizar dinheiro e aproveitar ao máximo o happy hour. |
+|Luís Santos         | quero poder adicionar itens à conta do grupo           | para garantir que todos os pedidos sejam considerados na divisão final.               |
+|Isabela Ferreira    | quero poder tirar fotos dos pratos no aplicativo                | para registrar os itens pedidos e facilitar a divisão precisa da conta |
+|Isabela Ferreira         | quero receber sugestões de bares locais baseadas em avaliações gastronômicas           | para descobrir novos lugares para experimentar com meus amigos.                |
+|Isabela Ferreira        | quero ter a opção de dividir igualmente ou de acordo com o que cada um consumiu              | para atender às diferentes preferências de compartilhamento do grupo.
+ |
+|Rafael Oliveira        | Quero organizar os encontros da faculdade de acordo com oq cada um consome         | para coordenar encontros nos bares locais de forma mais eficiente.               |
+|Rafael Oliveira         | quero ter a capacidade de verificar o histórico de encontros anteriores              | para lembrar onde fomos e como foram divididos os gastos em cada evento. |
+|Rafael Oliveira         | quero poder incluir uma nota ou comentário junto à divisão da conta              | para lembrar o motivo de gastos específicos e manter a transparência com meus amigos. |
+
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
