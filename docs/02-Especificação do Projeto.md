@@ -99,8 +99,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O Aplicativo deverá ter uma interface intuitiva e de fácil utilização. | ALTA | 
+|RNF-002| As informações apresentadas devem ser claras, legíveis e organizadas de forma a facilitar a compreensão. |  ALTA | 
+|RNF-003| Durante a escolha de itens e cálculos de divisão, não deve haver atrasos perceptíveis. | MÉDIO |
+|RNF-004| Os dados das contas e históricos de encontro devem ser armazenados de forma segura e acessível para os usuários. | ALTO |
+|RNF-005| A aplicação deve ser projetada para atender às diretrizes de acessibilidade, tornando-a utilizável para pessoas com deficiências visuais ou outras limitações. | BAIXO |
+|RNF-006| O aplicativo pode ser integrado a serviços de avaliação gastronômica, para fornecer recomendações e avaliações de restaurantes. | BAIXO |
+|RNF-007| O aplicativo deve fornecer sugestões de bares e restaurantes com base na localização do usuário, ele deve ser capaz de rastrear a localização do usuário com precisão e respeitar as preferências de privacidade. | BAIXO |
+|RNF-008| O aplicativo deve garantir consistência nos cálculos de divisão de contas, independentemente do número de pessoas no grupo ou dos itens pedidos. | ALTO |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -123,8 +129,10 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 20/11/2023. |
+|02| A equipe não pode subcontratar o desenvolvimento do trabalho. |
+|03| O projeto não poderá ser entregue sem que as funcionalidades essenciais estejam prontas. |
+|04| O projeto deve ser desenvolvido utilizando a linguagem de programação React Native. |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
