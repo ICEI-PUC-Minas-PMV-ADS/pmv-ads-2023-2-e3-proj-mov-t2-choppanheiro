@@ -11,12 +11,12 @@ Este projeto visa resolver o desafio de dividir equitativamente a conta entre am
 
 ## Integrantes
 
-Amanda Ramires Guimarães Brito
-Geison Amorim Marçal
-Lucas Guilherme dos Reis
-Marlon Cezar de Almeida dos Santos
-Pablo Muriell Batista Alves
-Victor Kingma
+* Amanda Ramires Guimarães Brito
+* Geison Amorim Marçal
+* Lucas Guilherme dos Reis
+* Marlon Cezar de Almeida dos Santos
+* Pablo Muriell Batista Alves
+* Victor Kingma
 
 ## Orientador
 
