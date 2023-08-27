@@ -14,18 +14,6 @@ Isabela Ferreira, com 25 anos, é uma estudante de gastronomia. Como amante da c
 
 Rafael Oliveira, de 32 anos, é um empreendedor. Como alguém que gosta de socializar, ele adora organizar encontros com amigos em bares locais para ampliar sua rede de contatos. Rafael deseja criar um evento no aplicativo e convidar seus amigos para coordenar esses encontros de maneira mais eficiente. Além disso, ele valoriza a capacidade de verificar o histórico de encontros anteriores para lembrar onde foram e como foram divididos os gastos em cada evento. Rafael também acha importante poder incluir uma nota ou comentário junto à divisão da conta para manter a transparência com seus amigos.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
-
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
@@ -37,21 +25,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Luís Santos         | quero poder adicionar itens à conta do grupo           | para garantir que todos os pedidos sejam considerados na divisão final.               |
 |Isabela Ferreira    | quero poder tirar fotos dos pratos no aplicativo                | para registrar os itens pedidos e facilitar a divisão precisa da conta |
 |Isabela Ferreira         | quero receber sugestões de bares locais baseadas em avaliações gastronômicas           | para descobrir novos lugares para experimentar com meus amigos.                |
-|Isabela Ferreira        | quero ter a opção de dividir igualmente ou de acordo com o que cada um consumiu              | para atender às diferentes preferências de compartilhamento do grupo.
- |
+|Isabela Ferreira        | quero ter a opção de dividir igualmente ou de acordo com o que cada um consumiu              | para atender às diferentes preferências de compartilhamento do grupo.|
 |Rafael Oliveira        | Quero organizar os encontros da faculdade de acordo com oq cada um consome         | para coordenar encontros nos bares locais de forma mais eficiente.               |
 |Rafael Oliveira         | quero ter a capacidade de verificar o histórico de encontros anteriores              | para lembrar onde fomos e como foram divididos os gastos em cada evento. |
 |Rafael Oliveira         | quero poder incluir uma nota ou comentário junto à divisão da conta              | para lembrar o motivo de gastos específicos e manter a transparência com meus amigos. |
-
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Modelagem do Processo de Negócio 
 
@@ -184,21 +161,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-007| O aplicativo deve fornecer sugestões de bares e restaurantes com base na localização do usuário, ele deve ser capaz de rastrear a localização do usuário com precisão e respeitar as preferências de privacidade. | BAIXO |
 |RNF-008| O aplicativo deve garantir consistência nos cálculos de divisão de contas, independentemente do número de pessoas no grupo ou dos itens pedidos. | ALTO |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
@@ -210,23 +172,11 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |03| O projeto não poderá ser entregue sem que as funcionalidades essenciais estejam prontas. |
 |04| O projeto deve ser desenvolvido utilizando a linguagem de programação React Native. |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
-
 ## Diagrama de Casos de Uso
-
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
 
 ![Diagrama-Caso-de_Uso](img/ChoppanheirosUseCase.png)
 
 # Matriz de Rastreabilidade
-
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
-
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
 
 ![Matriz de Rastreabilidade (1)_page-0001](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/89876269/3c21c9ac-1c52-4404-82ba-e47947326942)
 
