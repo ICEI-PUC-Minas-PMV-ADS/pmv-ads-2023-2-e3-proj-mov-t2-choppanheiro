@@ -45,7 +45,7 @@ Atualmente, dividir a conta entre amigos durante encontros em bares ou restauran
 
 * Risco de Conflitos: A divisão desigual ou injusta das despesas pode gerar descontentamento entre os participantes, resultando em conflitos e afetando negativamente a experiência social.
 
-Modelo do Sistema Atual:
+###Modelo do Sistema Atual:
 
 No cenário atual, a divisão da conta em um bar é geralmente realizada de forma manual, com os seguintes passos:
 
