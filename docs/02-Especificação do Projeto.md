@@ -57,23 +57,97 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Atualmente, dividir a conta entre amigos durante encontros em bares ou restaurantes pode ser uma tarefa complicada e propensa a erros, o que pode levar a mal-entendidos e conflitos entre os participantes. Os principais problemas identificados na situação atual são os seguintes:
+
+* Complexidade das Despesas: Em encontros sociais, os participantes geralmente fazem pedidos individuais com diferentes itens e preços. Calcular manualmente a parte de cada pessoa pode ser complicado e demorado, especialmente quando há variações nas taxas de serviço e impostos.
+
+* Dificuldade de Rastreamento: Manter o controle dos itens pedidos por cada indivíduo e registrar os preços correspondentes pode ser desafiador, especialmente quando o grupo é grande e os pedidos são frequentes.
+
+* Falhas na Comunicação: As preferências de pagamento e os limites financeiros nem sempre são claros entre os amigos, o que pode levar a desacordos sobre como a conta deve ser dividida.
+
+* Risco de Conflitos: A divisão desigual ou injusta das despesas pode gerar descontentamento entre os participantes, resultando em conflitos e afetando negativamente a experiência social.
+
+Modelo do Sistema Atual:
+
+No cenário atual, a divisão da conta em um bar é geralmente realizada de forma manual, com os seguintes passos:
+
+* Coleta de Pedidos: Cada pessoa faz o seu pedido e o garçom anota as escolhas de cada indivíduo.
+
+* Registro de Preços: Os preços dos itens são registrados manualmente, considerando taxas e impostos, se aplicáveis.
+
+* Cálculo Manual: Alguém do grupo assume a responsabilidade de calcular as partes individuais com base nos pedidos e preços registrados. Isso pode ser suscetível a erros humanos.
+
+* Divisão de Pagamento: Os participantes contribuem com dinheiro para cobrir suas partes, sem garantia de que o cálculo tenha sido feito de maneira precisa e justa.
+
+* Possíveis Discrepâncias: Se ocorrerem discrepâncias ou desentendimentos sobre a divisão, pode haver discussões ou até mesmo conflitos.
+
+Proposta de Aplicativo Móvel:
+
+Para abordar esses desafios, um aplicativo móvel dedicado à divisão de contas em bares pode ser uma solução inovadora. O aplicativo poderia oferecer as seguintes funcionalidades:
+
+* Registro de Pedidos: Os participantes poderiam fazer seus pedidos individualmente no aplicativo, que registraria automaticamente os itens e preços.
+
+* Cálculo Automático: Com base nos pedidos registrados, o aplicativo poderia calcular automaticamente as partes individuais, considerando taxas e impostos.
+
+* Transparência: Os participantes poderiam visualizar claramente como o cálculo foi feito, promovendo transparência e evitando mal-entendidos.
+
+* Histórico de Encontros: O aplicativo poderia manter um histórico de encontros anteriores e divisões de contas, facilitando referências futuras.
+
+* Compartilhamento Fácil: Os participantes poderiam compartilhar facilmente os detalhes da divisão com seus amigos, evitando discussões posteriores. 
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+A proposta consiste no desenvolvimento e implementação de um aplicativo móvel inovador projetado para simplificar e otimizar a divisão de contas entre amigos durante encontros em bares e restaurantes. O aplicativo visa oferecer uma solução conveniente e precisa para calcular as partes individuais de cada participante, promovendo a transparência, evitando conflitos e melhorando a experiência social.
 
-### Processo 1 – NOME DO PROCESSO
+Limites da Proposta:
+Este aplicativo se concentra exclusivamente na divisão de contas em encontros sociais em estabelecimentos de alimentação e bebidas. Ele não aborda outras funcionalidades relacionadas a planejamento de eventos, compartilhamento de despesas residenciais ou cálculos financeiros complexos. Além disso, o aplicativo não substitui o atendimento e a interação com os funcionários do local, mas sim complementa o processo de divisão de contas.
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+Ligações com Estratégias e Objetivos do Negócio:
+A proposta está alinhada com as estratégias de proporcionar uma experiência positiva aos clientes e de aprimorar a eficiência dos processos. Ao resolver um desafio comum nas interações sociais em estabelecimentos comerciais, o aplicativo contribui para a satisfação dos clientes e para a promoção de relações harmoniosas entre amigos. Além disso, a implementação do aplicativo demonstra o compromisso do negócio com a inovação tecnológica e a busca por soluções práticas.
 
-![Processo 1](img/02-bpmn-proc1.png)
+Oportunidades de Melhorias:
 
-### Processo 2 – NOME DO PROCESSO
+* Integração de Pagamentos: Além de calcular as partes individuais, o aplicativo pode ser aprimorado com a capacidade de realizar pagamentos diretos por meio de carteiras digitais ou serviços de pagamento online, simplificando ainda mais o processo.
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
+* Recomendações Personalizadas: Com base em padrões anteriores de pedidos e preferências, o aplicativo poderia oferecer recomendações de pratos ou bebidas para os participantes, enriquecendo a experiência gastronômica.
 
-![Processo 2](img/02-bpmn-proc2.png)
+* Integração com Redes Sociais: A possibilidade de compartilhar detalhes da divisão de contas através de redes sociais ou mensageiros populares pode facilitar a comunicação entre os amigos.
+
+* Avaliações e Comentários: Os usuários poderiam avaliar e comentar sobre a experiência de usar o aplicativo, fornecendo feedback valioso para melhorias contínuas.
+
+* Integração com Estabelecimentos: A colaboração com estabelecimentos para oferecer promoções ou descontos exclusivos aos usuários do aplicativo poderia ser uma vantagem adicional.
+
+* Soluções para Grupos Grandes: Desenvolver funcionalidades específicas para lidar com grupos maiores, como ferramentas de votação para escolher restaurantes ou pedidos em grupo, poderia atender a uma variedade de cenários.
+
+Em resumo, a proposta de desenvolver um aplicativo móvel para a divisão de contas em bares visa proporcionar uma solução eficaz para um desafio comum, alinhando-se às estratégias de melhorar a experiência do cliente e a eficiência dos processos. Há diversas oportunidades para aprimorar ainda mais o aplicativo e agregar valor aos usuários, contribuindo para o sucesso e a diferenciação do negócio no mercado.
+
+### Processo 1 - Cálculo Automático das Partes Individuais
+
+Nome do Processo: Cálculo Automático das Partes Individuais
+
+Oportunidades de Melhorias:
+
+* Personalização de Taxas e Gorjetas: Permitir que os usuários personalizem as taxas de serviço e gorjetas de acordo com suas preferências ou as políticas do estabelecimento.
+
+* Divisão de Itens Compartilhados: Incluir a capacidade de dividir equitativamente os custos de itens compartilhados, como aperitivos ou uma garrafa de vinho.
+
+* Revisão e Ajustes: Oferecer uma etapa de revisão onde os usuários possam verificar e ajustar manualmente as partes individuais antes de confirmar o cálculo.
+
+* Arredondamento Inteligente: Implementar um sistema de arredondamento inteligente para evitar valores fracionados inconvenientes.
+
+* Divisão Proporcional: Criar a opção de dividir os itens de acordo com a proporção de consumo de cada pessoa, levando em consideração os preços dos pedidos. 
+
+![BPMN](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/89876269/8a9f6fb4-4734-4330-a394-21ab7fd2bd3e)
+
+Descrição do modelo BPMN:
+
+* Registrar Pedidos: Os participantes fazem seus pedidos individualmente através do aplicativo, que registra automaticamente os itens selecionados e seus preços.
+
+* Calcular Partes: Com base nos pedidos registrados e nas configurações de taxas, o aplicativo calcula automaticamente as partes individuais de cada participante.
+
+* Revisar e Ajustar: Os usuários têm a opção de revisar as partes calculadas e fazer ajustes manualmente, se necessário, para garantir precisão e personalização.
+
+* Finalizar Divisão: Após revisões ou ajustes, os usuários confirmam a divisão, e o aplicativo fornece os valores finais a serem pagos por cada pessoa.
 
 ## Indicadores de Desempenho
 
