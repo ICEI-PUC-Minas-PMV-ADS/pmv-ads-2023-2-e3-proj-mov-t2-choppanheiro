@@ -258,7 +258,19 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 ![Simple Project Timeline](img/02-project-timeline.png)
 
 ## Gestão de Orçamento
+| Categoria          | Descrição                                           | Custo Estimado  |
+|-------------------|----------------------------------------------------|-----------------------------|
+| Recursos Humanos  | Desenvolvedores (2)                                 | R$30.000,00                     |
+|                   | Designer de Interface                               | R$8.000,00                      |
+|                   | Gerente de Projeto                                  | R$5.000,00                      |
+| Hardware          | Computadores para a equipe de desenvolvimento      | R$10.000,00                     |
+|                   | Dispositivos móveis para testes                     | R$3.000,00                      |
+| Rede              | Serviços de hospedagem e servidores                 | R$2.000,00                      |
+| Software          | Licenças de software de desenvolvimento            | R$2.500,00                      |
+|                   | Ferramentas de design e prototipagem                | R$1.000,00                      |
+| Serviços          | Testes de usabilidade e QA                          | R$4.000,00                      |
+|                   | Serviços de consultoria técnica                     | R$3.500,00                      |
+| **Total**         |                                                    | **R$69.000,00**                 |
 
-O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
 
-![Orçamento](img/02-orcamento.png)
+
