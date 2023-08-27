@@ -22,7 +22,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Luís Santos         | quero poder escanear o código QR da conta do bar           | para agilizar o processo de divisão da conta entre meus amigos.               |
 |Luís Santos         | quero ver as promoções e ofertas especiais do bar                | para economizar dinheiro e aproveitar ao máximo o happy hour. |
-|Luís Santos         | quero poder adicionar itens à conta do grupo           | para garantir que todos os pedidos sejam considerados na divisão final.               |
+|Luís Santos         | quero poder adicionar itens à conta do grupo           | para garantir que todos os pedidos sejam considerados na divisão final. |            
 |Isabela Ferreira    | quero poder tirar fotos dos pratos no aplicativo                | para registrar os itens pedidos e facilitar a divisão precisa da conta |
 |Isabela Ferreira         | quero receber sugestões de bares locais baseadas em avaliações gastronômicas           | para descobrir novos lugares para experimentar com meus amigos.                |
 |Isabela Ferreira        | quero ter a opção de dividir igualmente ou de acordo com o que cada um consumiu              | para atender às diferentes preferências de compartilhamento do grupo.|
