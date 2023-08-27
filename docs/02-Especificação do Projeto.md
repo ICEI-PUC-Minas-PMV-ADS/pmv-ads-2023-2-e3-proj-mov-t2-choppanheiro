@@ -20,15 +20,16 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Luís Santos         | quero poder escanear o código QR da conta do bar           | para agilizar o processo de divisão da conta entre meus amigos.               |
-|Luís Santos         | quero ver as promoções e ofertas especiais do bar                | para economizar dinheiro e aproveitar ao máximo o happy hour. |
-|Luís Santos         | quero poder adicionar itens à conta do grupo           | para garantir que todos os pedidos sejam considerados na divisão final. |            
-|Isabela Ferreira    | quero poder tirar fotos dos pratos no aplicativo                | para registrar os itens pedidos e facilitar a divisão precisa da conta |
-|Isabela Ferreira         | quero receber sugestões de bares locais baseadas em avaliações gastronômicas           | para descobrir novos lugares para experimentar com meus amigos.                |
-|Isabela Ferreira        | quero ter a opção de dividir igualmente ou de acordo com o que cada um consumiu              | para atender às diferentes preferências de compartilhamento do grupo.|
-|Rafael Oliveira        | Quero organizar os encontros da faculdade de acordo com oq cada um consome         | para coordenar encontros nos bares locais de forma mais eficiente.               |
-|Rafael Oliveira         | quero ter a capacidade de verificar o histórico de encontros anteriores              | para lembrar onde fomos e como foram divididos os gastos em cada evento. |
-|Rafael Oliveira         | quero poder incluir uma nota ou comentário junto à divisão da conta              | para lembrar o motivo de gastos específicos e manter a transparência com meus amigos. |
+|Luís Santos         | quero escanear o QR Code da conta, se possível [RF07]  | para garantir que o valor no aplicativo e os itens consumidos foram os mesmos |
+|Luís Santos         | quero poder escanear o cardápio caso o estabelecimento possua um [RF08]| para facilitar a marcação dos itens consumidos |
+|Luís Santos         | quero poder adicionar itens à conta do grupo [RF03] e [RF09]| para garantir que todos os pedidos sejam considerados na divisão final |    
+|Isabela Ferreira    | quero poder adicionar gorjeta/couvert [RF03] e [RF09]| para entrar na divisão da conta  |
+|Isabela Ferreira    | quero ter a opção de receber notificações [RF10]|para me lembrar de anotar o que estou consumindo|
+|Isabela Ferreira    | quero ter a opção de dividir igualmente, ou de acordo com o que cada um consumiu [RF06] e [RF05]| para atender às diferentes preferências de compartilhamento do grupo.|
+|Rafael Oliveira     | quero ao final do pedido poder avaliar o estabelecimento [RF11]| para futuramente me ajudar a escolher um estabelecimento baseado nas minhas experiências.|
+|Rafael Oliveira     | quero ter a capacidade de verificar o histórico de encontros anteriores [RF11], [RF12] e [RF13]| para lembrar onde fomos e como foram divididos os gastos em cada evento.|
+|Rafael Oliveira     | quero poder incluir uma nota ou comentário junto à divisão da conta [RF13]| para lembrar o motivo de gastos específicos e manter a transparência com meus amigos.|
+|Rafael Oliveira     | quero poder saber antecipadamente o valor da minha conta a cada item consumido [RF03] e [RF04]| para controlar quanto posso gastar.|
 
 ## Modelagem do Processo de Negócio 
 
@@ -145,8 +146,20 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O aplicativo deve possibilitar o cadastro de usuários.| ALTA | 
+|RF-002| O aplicativo deve permitir o login na conta cadastrada mediante usuário e senha.| ALTA |
+|RF-003| O aplicativo deve permitir a cada usuário anotar os itens que consumiu.| ALTA |
+|RF-004| O aplicativo deve permitir que os usuários tenham a capacidade de monitorar em tempo real o valor de sua conta individual a cada item consumido.| ALTA |
+|RF-005| O aplicativo deve informar aos usuários o total gasto pela mesa assim que ele encerrar a conta.| ALTA |
+|RF-006| O aplicativo deve ser capaz de realizar a divisão da conta de duas formas: igualmente entre todos os membros do grupo ou individualmente. | ALTA |
+|RF-007| O aplicativo deve permitir que os usuários possam escanear o QR Code da conta para conferência.| BAIXA |
+|RF-008| O aplicativo deve permitir que os usuários possam escanear o cardápio do estabelecimento para que o usuário marque os itens que foram consumidos de maneira rápida e precisa.| BAIXA |
+|RF-009| O aplicativo deve permitir que os usuários possam adicionar uma quantia para gorjeta ou couvert à conta. Essa quantia será incluída na divisão final da conta.| ALTA |
+|RF-010| O aplicativo deve permitir envio de notificações para lembrar os usuários de anotar os itens que estão consumindo durante o encontro, assegurando que todos os itens consumidos sejam devidamente incluídos na conta final. | MÉDIA |
+|RF-011| O aplicativo deve permitir que os usuários avaliem o estabelecimento onde o encontro ocorreu após o encerramento da conta para, futuramente, ajudar o usuário a escolher locais para futuros encontros.| BAIXA |
+|RF-012| O aplicativo deve permitir que os usuários acessem um histórico de encontros anteriores, fornecendo uma visão geral dos locais visitados e como os custos foram divididos em cada evento, permitindo aos usuários um melhor controle financeiro e uma revisão dos itens consumidos nos locais frequentados.| MÉDIA |
+|RF-013| O aplicativo deve permitir que os usuários incluam uma nota ou comentário junto à divisão da conta. Isso permitirá aos usuários anotar detalhes específicos sobre o encontro ou os itens consumidos, ajudando a lembrar o motivo de gastos específicos e mantendo a transparência com os demais integrantes do grupo.| BAIXA |
+|RF-014| O aplicativo deve permitir que os usuários criem uma mesa, incluir usuários nela e encerrar a conta.| ALTA |
 
 ### Requisitos não Funcionais
 
