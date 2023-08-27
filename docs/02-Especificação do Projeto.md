@@ -1,10 +1,6 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+A criação desta documentação de contexto visa abordar uma situação comum, porém muitas vezes desafiadora, que ocorre em encontros sociais entre amigos em bares, restaurantes e estabelecimentos similares - a divisão de despesas. A justificativa para essa documentação é fornecer orientações e informações abrangentes sobre como lidar de forma eficaz e justa com a divisão de contas em tais situações.
 
 ## Personas
 
