@@ -1,23 +1,26 @@
-# TÍTULO DO PROJETO
+# CHOPPANHEIROS
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DO SISTEMA`
 
-`DISCIPLINA`
+`DESENVOLVIMENTO DE UMA APLICAÇÃO MÓVEL EM UM AMBIENTE DE NEGÓCIO`
 
-`SEMESTRE`
+`2.2023`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Este projeto visa resolver o desafio de dividir equitativamente a conta entre amigos durante encontros em locais como bares ou restaurantes. A divisão justa é crucial para manter relações harmoniosas e evitar conflitos. O objetivo da documentação é oferecer um guia abrangente para lidar com a divisão de contas nesses cenários, incluindo métodos de cálculo, considerações importantes e soluções para desafios. A justificativa inclui a prevenção de conflitos, eficiência, sensibilidade financeira, melhoria da experiência social e respeito às preferências individuais. Em essência, esse projeto busca aprimorar encontros sociais ao fornecer diretrizes claras e promover transparência, comunicação aberta e empatia na divisão de despesas.
+
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+Amanda Ramires Guimarães Brito
+Geison Amorim Marçal
+Lucas Guilherme dos Reis
+Marlon Cezar de Almeida dos Santos
+Pablo Muriell Batista Alves
+Victor Kingma
 
 ## Orientador
 
-* Nome completo do professor 1
+Mateus Curcino de Lima
 
 ## Instruções de utilização
 
