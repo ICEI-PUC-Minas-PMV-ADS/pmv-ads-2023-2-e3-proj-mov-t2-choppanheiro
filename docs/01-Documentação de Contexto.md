@@ -15,11 +15,12 @@ Dividir a conta de bar entre amigos é uma atividade social rotineira que envolv
 
 Visando fornecer orientações e informações abrangentes sobre como lidar de forma eficaz e justa com a divisão de contas em tais situações. Abaixo estão os principais motivos para a criação desta proposta:
  
-1. Prevenção de Conflitos:
-2. Eficiência e Praticidade:
-3. Sensibilidade Financeira:
-5. Melhoria da Experiência Social:
-6. Respeito pelas Preferências Individuais:
+1. Prevenção de Conflitos
+2. Eficiência e Praticidade
+3. Sensibilidade Financeira
+4. Melhoria da Experiência Social
+5. Respeito pelas Preferências Individuais
+
  
 Em resumo, esta proposta visa aprimorar a qualidade dos encontros sociais entre amigos, proporcionando orientações claras e eficazes para a divisão de contas. Ao promover a transparência, a comunicação aberta e a empatia, essa documentação contribui para um ambiente positivo e livre de conflitos, onde todos os participantes podem desfrutar de momentos sociais gratificantes.
 
