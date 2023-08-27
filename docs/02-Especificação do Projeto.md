@@ -151,12 +151,14 @@ Descrição do modelo BPMN:
 
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
+| Indicador               | Objetivos                                          | Descrição                                                                                                                             | Cálculo                                                       | Fonte de Dados                            | Perspectiva                |
+|-------------------------|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------|----------------------------|
+| Precisão do Cálculo      | Alcançar alta precisão nas partes individuais.    | Mede a exatidão das partes calculadas em relação ao valor real da conta.                                                            | (Partes Calculadas / Valor Real da Conta) * 100           | Dados internos do aplicativo             | Qualidade do Processo       |
+| Tempo de Processamento   | Apresentar as partes em um tempo eficiente.       | Avalia o tempo necessário para calcular e apresentar as partes individuais após o registro dos pedidos.                         | Tempo médio para apresentar as partes individuais         | Dados internos do aplicativo             | Eficiência do Processo      |
+| Taxa de Aceitação de Ajustes Manuais | Minimizar ajustes manuais frequentes.   | Mede quantos usuários fazem ajustes manuais após o cálculo automático das partes.                              | (Usuários com ajustes manuais / Total de Usuários) * 100 | Dados internos do aplicativo             | Eficiência e Satisfação    |
+| Satisfação do Usuário    | Garantir a satisfação dos usuários.              | Avalia a satisfação dos usuários em relação à facilidade de uso e à eficácia do processo de divisão de contas.                      | Média das avaliações de satisfação dos usuários           | Pesquisas de satisfação dos usuários     | Satisfação do Usuário      |
+| Taxa de Utilização do Aplicativo | Promover o uso contínuo do aplicativo. | Mede a frequência com que os usuários optam por usar o aplicativo para calcular partes em comparação com outros métodos. | (Usos do aplicativo / Total de encontros sociais) * 100 | Dados internos do aplicativo             | Utilização do Aplicativo    |
 
-Usar o seguinte modelo: 
-
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
 
 ## Requisitos
 
