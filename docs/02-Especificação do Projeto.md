@@ -55,7 +55,7 @@ No cenário atual, a divisão da conta em um bar é geralmente realizada de form
 
 * Possíveis Discrepâncias: Se ocorrerem discrepâncias ou desentendimentos sobre a divisão, pode haver discussões ou até mesmo conflitos.
 
-Proposta de Aplicativo Móvel:
+### Proposta de Aplicativo Móvel:
 
 Para abordar esses desafios, um aplicativo móvel dedicado à divisão de contas em bares pode ser uma solução inovadora. O aplicativo poderia oferecer as seguintes funcionalidades:
 
