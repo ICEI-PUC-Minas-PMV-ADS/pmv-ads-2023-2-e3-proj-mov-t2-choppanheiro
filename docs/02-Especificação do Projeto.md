@@ -73,13 +73,14 @@ Para abordar esses desafios, um aplicativo móvel dedicado à divisão de contas
 
 A proposta consiste no desenvolvimento e implementação de um aplicativo móvel inovador projetado para simplificar e otimizar a divisão de contas entre amigos durante encontros em bares e restaurantes. O aplicativo visa oferecer uma solução conveniente e precisa para calcular as partes individuais de cada participante, promovendo a transparência, evitando conflitos e melhorando a experiência social.
 
-Limites da Proposta:
+### Limites da Proposta:
 Este aplicativo se concentra exclusivamente na divisão de contas em encontros sociais em estabelecimentos de alimentação e bebidas. Ele não aborda outras funcionalidades relacionadas a planejamento de eventos, compartilhamento de despesas residenciais ou cálculos financeiros complexos. Além disso, o aplicativo não substitui o atendimento e a interação com os funcionários do local, mas sim complementa o processo de divisão de contas.
 
-Ligações com Estratégias e Objetivos do Negócio:
+### Ligações com Estratégias e Objetivos do Negócio:
+
 A proposta está alinhada com as estratégias de proporcionar uma experiência positiva aos clientes e de aprimorar a eficiência dos processos. Ao resolver um desafio comum nas interações sociais em estabelecimentos comerciais, o aplicativo contribui para a satisfação dos clientes e para a promoção de relações harmoniosas entre amigos. Além disso, a implementação do aplicativo demonstra o compromisso do negócio com a inovação tecnológica e a busca por soluções práticas.
 
-Oportunidades de Melhorias:
+### Oportunidades de Melhorias:
 
 * Integração de Pagamentos: Além de calcular as partes individuais, o aplicativo pode ser aprimorado com a capacidade de realizar pagamentos diretos por meio de carteiras digitais ou serviços de pagamento online, simplificando ainda mais o processo.
 
