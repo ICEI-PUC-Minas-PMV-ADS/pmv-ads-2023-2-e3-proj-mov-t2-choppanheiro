@@ -40,26 +40,21 @@ DESIGN
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+Foi definido que para hospedagem utilizaremos um local Host.
 
 ## Qualidade de Software
 
-Conceituar qualidade de fato é uma tarefa complexa, mas ela pode ser vista como um método gerencial que através de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
+A qualidade de software refere-se à medida em que um software atende às necessidades e expectativas dos seus usuários, bem como aos padrões e requisitos estabelecidos durante o processo de desenvolvimento. A qualidade de software é um aspecto crítico, pois afeta diretamente a satisfação do usuário, a eficiência operacional e a confiabilidade do software. Existem várias dimensões e critérios que podem ser usados para avaliar a qualidade de software.
 
-No contexto de desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem satisfeitas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, tal nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software.
-Com base nessas características e nas respectivas sub-características, identifique as sub-características que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software considerando-se alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão a equipe avaliar os objetos de interesse.
+Neste projeto apresentaremos a "ISO/IEC 25010:2011" (substituta da norma ISO/IEC 9126) para avaliar a qualidade do software. 
 
-> **Links Úteis**:
->
-> - [ISO/IEC 25010:2011 - Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models](https://www.iso.org/standard/35733.html/)
-> - [Análise sobre a ISO 9126 – NBR 13596](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/)
-> - [Qualidade de Software - Engenharia de Software 29](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209/)
+A norma ISO/IEC 9126 é um padrão internacional que se concentra na qualidade de software. Ela fornece um conjunto de diretrizes e critérios que ajudam as organizações a avaliar e melhorar a qualidade de seus produtos de software. A ISO/IEC 9126 define seis características de qualidade de software e as divide em subcaracterísticas, fornecendo critérios específicos para avaliar cada uma delas. As oito características de qualidade definidas na norma que estão presentes no nosso projeto são:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/8ccdfa92-b3af-43c3-b087-059c2704d323)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/28f22c12-bdff-46a7-a58c-ead9f1a8fa58)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/a7c17ddb-1681-45c9-a366-a6202e366c06)
+
+
+
+
