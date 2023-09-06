@@ -26,13 +26,17 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 Linguagens de programação utilizadas:
 * JAVA: Linguagem de programação utilizada para o desenvolvimento backend da aplicação.
-* React: Framework utilizado no desenvolvimento frontend da aplicação.
+* React/ React Native: Framework utilizado no desenvolvimento frontend da aplicação.
+* Utilizamos também o Expo para, principalmente, construir (buildar) a aplicação para diferentes dispositivos Android e IOS, sem a necessidade de utilizar ambientes de desenvolvimento especializados, como o Android Studio e o XCode.
 
 IDE:
 * Foi utilizada a IDE Visual Studio Code versão 1.81, escolhido pela sua boa integração com o framework escolhido para o desenvolvimento.
 
 Banco de dados:
-* Foi definido a utilização de um banco de dados local. 
+* Foi definido a utilização de um banco de dados local.
+
+DESIGN
+* Para o design das telas, utilizamos o Figma.
 
 ## Hospedagem
 
