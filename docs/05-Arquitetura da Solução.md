@@ -24,9 +24,15 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Linguagens de programação utilizadas:
+* JAVA: Linguagem de programação utilizada para o desenvolvimento backend da aplicação.
+* React: Framework utilizado no desenvolvimento frontend da aplicação.
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+IDE:
+* Foi utilizada a IDE Visual Studio Code versão 1.81, escolhido pela sua boa integração com o framework escolhido para o desenvolvimento.
+
+Banco de dados:
+* Foi definido a utilização de um banco de dados local. 
 
 ## Hospedagem
 
