@@ -1,6 +1,7 @@
 # CHOPPANHEIROS
 
-![Documentação de Contexto e (4)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/114542015/2d243bf9-f01d-444e-aaa2-9acce6a09e2d)
+![Group 6](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/114542015/c4ca2c31-2ee2-4038-8c66-00c9fe52fd47)
+
 
 
 `ANÁLISE E DESENVOLVIMENTO DO SISTEMAs`
