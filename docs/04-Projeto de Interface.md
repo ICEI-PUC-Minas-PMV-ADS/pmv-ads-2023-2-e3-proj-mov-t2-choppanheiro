@@ -16,11 +16,6 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/79721330/1249752c-9ec0-4528-924a-6513142a116f)
 
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
-
-> **Links Úteis**:
-> - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
-
 ## Wireframes
 
 https://www.figma.com/file/PIrNxs1qlewQEYqivHL5lq/Choppanheiros---wireframes?type=design&node-id=114%3A463&mode=design&t=6E7rH35pykXz5PSw-1
