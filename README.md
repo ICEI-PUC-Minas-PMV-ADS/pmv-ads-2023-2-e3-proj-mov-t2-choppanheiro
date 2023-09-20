@@ -1,6 +1,7 @@
 # CHOPPANHEIROS
 
-![Group 64](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/114542015/ec60bf5e-9c44-4cda-9077-7c4c8d5d1e54)
+![Group 63](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/114542015/803d26cc-48a4-4619-a4c8-51f980ea8359)
+
 
 
 
