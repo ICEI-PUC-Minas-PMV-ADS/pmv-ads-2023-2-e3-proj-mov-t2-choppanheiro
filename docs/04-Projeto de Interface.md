@@ -35,6 +35,8 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 ## Wireframes
 
+https://www.figma.com/file/PIrNxs1qlewQEYqivHL5lq/Choppanheiros---wireframes?type=design&node-id=114%3A463&mode=design&t=6E7rH35pykXz5PSw-1
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/114542015/3fb2e7f5-61ee-4c75-85f5-b3e9de593790)
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/114542015/2ad0dc5f-badc-47af-ab23-7890d9613d0a)
