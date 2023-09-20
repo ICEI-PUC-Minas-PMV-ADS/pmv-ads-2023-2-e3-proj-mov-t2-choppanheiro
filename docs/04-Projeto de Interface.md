@@ -1,11 +1,24 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+### Protótipo Interativo:
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
+https://www.figma.com/proto/PIrNxs1qlewQEYqivHL5lq/Choppanheiros---wireframes?page-id=43%3A443&type=design&node-id=43-447&viewport=594%2C438%2C0.06&t=U4A6VRxVvZNFfs9l-1&scaling=min-zoom&starting-point-node-id=43%3A444&show-proto-sidebar=1&mode=design
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+### Tela Inicial - Login - Cadastro - Esqueceu Senha
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/114542015/dfdea8c9-5f81-41a9-a126-ec17eb4ec6c9)
+
+
+### Tela Abrir Mesa- Menu - Minha Conta - Histórico
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/114542015/f9f8b124-a9c6-4191-8b03-639fd7e005c2)
+
+
+### Tela Informações Mesa - Divisão - Adicionar Item/Fechar Conta - Confirmar Item - Comanda Aberta Encerrar Conta - Comanda Aberta 
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/114542015/d8f9e966-6839-45bd-95c8-e5e643f9756d)
+
 
 ## Diagrama de Fluxo
 
