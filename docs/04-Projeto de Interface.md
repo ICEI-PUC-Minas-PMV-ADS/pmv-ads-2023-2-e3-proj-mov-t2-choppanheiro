@@ -3,7 +3,7 @@
 
 ### Protótipo Interativo:
 
-https://www.figma.com/proto/PIrNxs1qlewQEYqivHL5lq/Choppanheiros---wireframes?page-id=43%3A443&type=design&node-id=43-447&viewport=594%2C438%2C0.06&t=U4A6VRxVvZNFfs9l-1&scaling=min-zoom&starting-point-node-id=43%3A444&show-proto-sidebar=1&mode=design
+[Clique aqui](https://www.figma.com/proto/PIrNxs1qlewQEYqivHL5lq/Choppanheiros---wireframes?page-id=43%3A443&type=design&node-id=43-447&viewport=594%2C438%2C0.06&t=U4A6VRxVvZNFfs9l-1&scaling=min-zoom&starting-point-node-id=43%3A444&show-proto-sidebar=1&mode=design)
 
 
 
@@ -18,7 +18,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Wireframes
 
-https://www.figma.com/file/PIrNxs1qlewQEYqivHL5lq/Choppanheiros---wireframes?type=design&node-id=114%3A463&mode=design&t=6E7rH35pykXz5PSw-1
+[Clique aqui](https://www.figma.com/file/PIrNxs1qlewQEYqivHL5lq/Choppanheiros---wireframes?type=design&node-id=114%3A463&mode=design&t=6E7rH35pykXz5PSw-1)
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/114542015/3fb2e7f5-61ee-4c75-85f5-b3e9de593790)
 
