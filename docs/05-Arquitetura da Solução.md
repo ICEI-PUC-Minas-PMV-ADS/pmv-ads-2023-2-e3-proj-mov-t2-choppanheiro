@@ -12,7 +12,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Modelo ER
 
-![Diagrama ER](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/89876269/f9829fd0-c7bb-4f87-8925-69a5b07d1941)
+![MER](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/83844536-5cd4-498c-b970-afef0c03d1be)
 
 ## Esquema Relacional
 
