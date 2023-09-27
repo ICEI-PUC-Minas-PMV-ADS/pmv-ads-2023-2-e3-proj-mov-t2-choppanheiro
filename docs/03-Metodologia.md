@@ -18,7 +18,16 @@ foi utilizado para hospedagem do repositório.
 O projeto segue a seguinte convenção para o nome de branches:
 
 - `main`: versão estável já testada do software
+- `release`: versão em testes do software
 - `dev`: versão de desenvolvimento do software
+
+Quanto à gerência de issues, o projeto adota a seguinte convenção para
+etiquetas:
+
+- `hotfix`: melhorias ou acréscimos à documentação
+- `bugfix`: uma funcionalidade encontra-se com problemas
+- `support`: uma funcionalidade precisa ser melhorada
+- `feature`: uma nova funcionalidade precisa ser introduzida
 
 ## Gerenciamento de Projeto
 
