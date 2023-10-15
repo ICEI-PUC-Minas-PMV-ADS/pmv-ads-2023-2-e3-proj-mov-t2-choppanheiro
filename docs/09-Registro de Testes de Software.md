@@ -3,8 +3,8 @@
 CT-01 - Cadastro de Perfil de Usuário
 
 
+https://im2.ezgif.com/tmp/ezgif-2-d1671e7151.gif
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/114542015/c9bbdc21-1da9-49af-81af-3a901fb46a88
 
 
 
@@ -12,7 +12,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanh
 
 CT-01 - Cadastro de Perfil de Usuário
 
-Realizado acesso ao aplicativo com usuário e senha cadastrados. Cadastrode usuário realizado de forma rápida e inuitiva.
+Realizado cadastro de usuário e senha. Caminho do botão criar conta até a conclusão foi rápido e intuitivo.
 
 Critério de êxito: Aceito.
 
