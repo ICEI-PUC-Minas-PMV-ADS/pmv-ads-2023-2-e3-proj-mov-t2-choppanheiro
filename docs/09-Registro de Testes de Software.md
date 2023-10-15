@@ -3,7 +3,8 @@
 CT-01 - Cadastro de Perfil de Usuário
 
 
-https://im2.ezgif.com/tmp/ezgif-2-d1671e7151.gif
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/114542015/6d7b8458-face-4481-ba46-a9bb2a2abff2)
+
 
 
 
