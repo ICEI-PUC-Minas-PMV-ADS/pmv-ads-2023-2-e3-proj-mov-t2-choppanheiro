@@ -1,20 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableWithoutFeedback } from 'react-native';
 import {Botao, Input, handlerTeclado, TextoBotao} from '../components/components';
-import { useNavigation } from '@react-navigation/native';
 import { useState } from 'react';
 
-import Login from '../controller/controller';
-
+import Logar from '../controller/controller';
 
 
 export default function Login() {
 
-  const navigation = useNavigation();
-
-  const tRecuperar = () => {
-  navigation.navigate('Recuperar')
-  };
 
   const [user, setUser] = useState();
   const [pass, setPass] = useState();
@@ -25,8 +18,7 @@ export default function Login() {
       pass
     }
 
-    //funçao para fazer o get
-    chamada(credenciais)
+    Logar(credenciais)
     };
 
 

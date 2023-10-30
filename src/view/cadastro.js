@@ -1,20 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableWithoutFeedback } from 'react-native';
 import {Botao, Input, handlerTeclado} from '../components/components';
-import { useNavigation } from '@react-navigation/native';
 import Principal from './principal';
 import { useState } from 'react';
 
-
-
+import Cadastrar from '../controller/controller'
 
 export default function Cadastro() {
-
-  const navigation = useNavigation();
-
-  const tPrincipal = () => {
-    navigation.navigate('Principal') 
-  };
 
   const [user, setUser] = useState();
   const [pass, setPass] = useState();
@@ -27,8 +19,7 @@ export default function Cadastro() {
       email
     }
 
-    //funçao para fazer o get
-    chamada(credenciais)
+    Cadastrar(credenciais)
     };
 
 
@@ -53,7 +44,7 @@ export default function Cadastro() {
         <Input holder='Confirme sua senha'></Input>
 
 
-        <Botao texto={'CRIAR CONTA'} onPress={tPrincipal} ></Botao>
+        <Botao texto={'CRIAR CONTA'} onPress={handleCadastro} ></Botao>
 
        
   
