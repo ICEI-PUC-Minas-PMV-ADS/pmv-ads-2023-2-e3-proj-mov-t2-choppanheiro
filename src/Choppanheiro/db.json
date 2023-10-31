@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "admin@admin.com",
+      "pass": "123",
+      "user": "admin",
+      "vpass": "123"
+    },
+    {
+      "email": "aa",
+      "pass": "aa",
+      "user": "Pedro",
+      "vpass": "ff",
+      "id": 2
+    }
+  ]
+}

@@ -4,10 +4,15 @@ import {Botao, Input, handlerTeclado, TextoBotao} from '../components/components
 import { useState } from 'react';
 
 import Logar from '../controller/controller';
+import { useNavigation } from '@react-navigation/native';
 
 
 export default function Login() {
 
+  const navigation = useNavigation();
+  const tRecuperar = () => {
+    navigation.navigate('Recuperar')
+  }
 
   const [user, setUser] = useState();
   const [pass, setPass] = useState();

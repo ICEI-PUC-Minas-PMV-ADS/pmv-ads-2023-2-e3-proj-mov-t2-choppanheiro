@@ -13,10 +13,15 @@
       "postId": 1
     }
   ],
-  "users": [
+  "profile": {
+    "name": "typicode"
+  },
+  "usuarios": [
     {
+      "email": "admin@admin",
+      "pass": "123",
       "user": "admin",
-      "pass": "123"
-     }
+      "vpass": "123"
+    }
   ]
 }

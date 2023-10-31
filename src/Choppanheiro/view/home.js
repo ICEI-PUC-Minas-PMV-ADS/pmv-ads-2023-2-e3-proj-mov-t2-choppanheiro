@@ -5,18 +5,19 @@ import { useNavigation } from '@react-navigation/native';
 
 
 
-
 export default function Home() {
 
   const navigation = useNavigation();
 
   const tLogin = () => {
     navigation.navigate('Login')
-  };
+  }
 
   const tCadastro = () => {
     navigation.navigate('Cadastro')
   }
+    
+  
 
     return (
         <View style={styles.container}>

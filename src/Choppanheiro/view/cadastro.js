@@ -1,21 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableWithoutFeedback } from 'react-native';
 import {Botao, Input, handlerTeclado} from '../components/components';
-import Principal from './principal';
 import { useState } from 'react';
 
-import Cadastrar from '../controller/controller'
+import { Cadastrar } from '../controller/controller';
 
 export default function Cadastro() {
 
   const [user, setUser] = useState();
   const [pass, setPass] = useState();
+  const [vpass, setVPass] = useState();
   const [email, setEmail] = useState();
 
   const handleCadastro = () => {
+
     const credenciais = {
       user,
       pass,
+      vpass,
       email
     }
 
@@ -41,7 +43,7 @@ export default function Cadastro() {
         <Input holder='Insira sua senha' valor={pass} onChangeText={setPass}></Input>
 
         <Text style={styles.text}>Confirmar Senha</Text>
-        <Input holder='Confirme sua senha'></Input>
+        <Input holder='Confirme sua senha' valor={vpass} onChangeText={setVPass}></Input>
 
 
         <Botao texto={'CRIAR CONTA'} onPress={handleCadastro} ></Botao>
