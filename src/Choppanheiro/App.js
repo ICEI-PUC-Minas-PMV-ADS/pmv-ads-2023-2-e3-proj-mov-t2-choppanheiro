@@ -18,10 +18,21 @@ export default function App() {
   return (
     <NavigationContainer>
     <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Cadastro" component={Cadastro} />
-      <Stack.Screen name="Recuperar" component={Recuperar} />
+      <Stack.Screen name="Home" component={Home} options={{
+          header: () => null,
+        }} />
+      <Stack.Screen name="Login" component={Login}
+      options={{
+        header: () => null,
+      }} />
+      <Stack.Screen name="Cadastro" component={Cadastro} 
+      options={{
+        header: () => null,
+      }}/>
+      <Stack.Screen name="Recuperar" component={Recuperar}
+      options={{
+        header: () => null,
+      }} />
       <Stack.Screen name="Principal" component={Principal} />
       <Stack.Screen name="Mesa" component={Mesa} />
     </Stack.Navigator>

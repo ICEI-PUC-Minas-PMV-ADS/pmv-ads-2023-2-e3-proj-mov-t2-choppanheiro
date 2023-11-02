@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         justifyContent: 'center',
         alignItems: 'center',
+        marginTop:20
       },
       textoBotao: {
         fontSize: 24,
@@ -61,13 +62,13 @@ const styles = StyleSheet.create({
         textAlign: 'center',
       },
       input: {
-        marginBottom: 20,
+        marginBottom: 15,
         borderWidth: 3,
         borderColor: '#FFBF00',
         borderRadius: 6,
         paddingHorizontal: 10,
         backgroundColor: 'white',
-        height: '7%',
+        height: 45,
         width: '80%',
       },
 });

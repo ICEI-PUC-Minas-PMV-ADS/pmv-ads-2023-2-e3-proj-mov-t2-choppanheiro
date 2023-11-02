@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TouchableWithoutFeedback } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableWithoutFeedback, } from 'react-native';
 import {Botao, Input, handlerTeclado} from '../components/components';
 import { useState } from 'react';
 
@@ -31,7 +31,9 @@ export default function Cadastro() {
     return (
         <TouchableWithoutFeedback onPress={handlerTeclado}>
         <View style={styles.container}>
-
+        <Image style={styles.img}
+            source={require('../assets/Logo.png')}
+          />
         
         <Text style={styles.text}>Usuário</Text>
         <Input holder='Insira seu usuário' valor={user} onChangeText={setUser}></Input>
@@ -72,7 +74,16 @@ export default function Cadastro() {
 
     text: {
         fontSize: 16,
-        color:'white'
+        color:'white',
+    
+    },
+
+    img: {
+      marginBottom: 30,
+      width: 240,
+      height: 250, 
+      marginTop: 50
+      
     }
 
   });

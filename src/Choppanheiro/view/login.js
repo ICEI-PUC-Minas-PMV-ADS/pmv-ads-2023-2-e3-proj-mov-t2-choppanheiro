@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TouchableWithoutFeedback } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableWithoutFeedback } from 'react-native';
 import {Botao, Input, handlerTeclado, TextoBotao} from '../components/components';
 import { useState } from 'react';
 
@@ -30,6 +30,9 @@ export default function Login() {
     return (
       <TouchableWithoutFeedback onPress={handlerTeclado}>
         <View style={styles.container}>
+        <Image style={styles.img}
+            source={require('../assets/Logo.png')}
+          />
         
         <Input holder={'Usuário'} valor={user} onChangeText={setUser}></Input>
 
@@ -58,7 +61,14 @@ export default function Login() {
     text: {
       fontSize: 16,
       color:'white'
-     }
+     },
+     img: {
+      marginBottom: 30,
+      width: 240,
+      height: 250, 
+      marginTop: 50
+      
+    }
 
   });
   
