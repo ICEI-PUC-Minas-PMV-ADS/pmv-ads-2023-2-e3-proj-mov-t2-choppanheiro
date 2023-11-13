@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableWithoutFeedback } from 'react-native';
 import {Botao, Input, handlerTeclado, TextoBotao} from '../components/components';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-import Logar from '../controller/controller';
+import { FIREBASE_AUTH } from '../firebase'
+import { signInWithEmailAndPassword } from 'firebase/auth'
 import { useNavigation } from '@react-navigation/native';
 
 
@@ -14,18 +15,30 @@ export default function Login() {
     navigation.navigate('Recuperar')
   }
 
-  const [user, setUser] = useState();
+  useEffect(() => {
+    const unsubscribe = FIREBASE_AUTH.onAuthStateChanged((user) => {
+      if (user) {
+        navigation.navigate("Principal");
+      }
+    });
+    return unsubscribe;
+  }, []);
+
+  const [email, setEmail] = useState();
   const [pass, setPass] = useState();
 
-  const handleEntrar = () => {
-    const credenciais = {
-      user,
-      pass
+  const SignUInAuth = FIREBASE_AUTH;
+  
+  const handleLogin = async () => {
+    try {
+      const response = await signInWithEmailAndPassword(SignUInAuth, email, pass);
+      console.log(response);
+      // alert('Cadastrado com sucesso!');
+    } catch (error) {
+      console.log(error);
+      alert('Falha no login: ' + error.message)
     }
-
-    Logar(credenciais)
-    };
-
+  };
 
     return (
       <TouchableWithoutFeedback onPress={handlerTeclado}>
@@ -34,11 +47,11 @@ export default function Login() {
             source={require('../assets/Logo.png')}
           />
         
-        <Input holder={'Usuário'} valor={user} onChangeText={setUser}></Input>
+        <Input holder={'Usuário'} valor={email} onChangeText={setEmail}></Input>
 
         <Input holder={'Senha'} valor={pass} onChangeText={setPass}></Input>
 
-        <Botao texto={'Entrar'} onPress={handleEntrar}></Botao>
+        <Botao texto={'Entrar'} onPress={handleLogin}></Botao>
 
         <TextoBotao onPress={tRecuperar} texto={'Esqueceu sua senha ?'}></TextoBotao>
   

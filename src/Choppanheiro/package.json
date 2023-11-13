@@ -7,15 +7,16 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "json-server": "json-server --host 192.168.100.58 --watch db.json --port 3000"
+    "json-server": "json-server -p 3006 -w db.json "
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.8",
     "@react-navigation/native-stack": "^6.9.14",
     "@react-navigation/stack": "^6.3.18",
-    "axios": "^1.5.1",
+    "axios": "^1.6.0",
     "expo": "^49.0.16",
     "expo-status-bar": "~1.6.0",
+    "firebase": "^10.5.2",
     "json-server": "^0.17.4",
     "react": "18.2.0",
     "react-native": "^0.72.5"

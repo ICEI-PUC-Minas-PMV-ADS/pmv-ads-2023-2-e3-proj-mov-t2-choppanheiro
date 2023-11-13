@@ -2,27 +2,48 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import {Botao} from '../components/components';
 import { useNavigation } from '@react-navigation/native';
+import { useEffect } from 'react';
 
 
+import { FIREBASE_AUTH } from '../firebase';
 
 
 export default function Principal() {
 
   const navigation = useNavigation();
 
+  useEffect(() => {
+    const unsubscribe = FIREBASE_AUTH.onAuthStateChanged((user) => {
+      if (user === null) {
+        navigation.navigate("Login");
+      }
+    });
+    return unsubscribe;
+  }, []);
+
   const tMesa = () => {
     navigation.navigate('Mesa')
   }
 
-    return (
-        <View style={styles.container}>
+  signOut = async () => {
+    try {
+        await FIREBASE_AUTH.signOut();
+    } catch (e) {
+        console.log(e);
+    }
+}
 
-        <Botao texto={'ABRIR MESA'} onPress={tMesa} ></Botao>
-  
-  
-        <StatusBar style="auto" />
-      </View>
-    )
+  return (
+    <View style={styles.container}>
+
+    
+    <Botao texto={'ABRIR MESA'} onPress={tMesa} ></Botao>
+    <Botao texto={'SAIR'} onPress={() => signOut()} ></Botao>
+
+
+      <StatusBar style="auto" />
+    </View>
+  )
   };
 
 

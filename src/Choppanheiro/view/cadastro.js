@@ -1,30 +1,43 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableWithoutFeedback, } from 'react-native';
 import {Botao, Input, handlerTeclado} from '../components/components';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-import { Cadastrar } from '../controller/controller';
+import { FIREBASE_AUTH } from '../firebase'
+import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { useNavigation } from '@react-navigation/native';
 
-export default function Cadastro() {
+
+export default function SignUp() {
+
+  const navigation = useNavigation();
 
   const [user, setUser] = useState();
   const [pass, setPass] = useState();
   const [vpass, setVPass] = useState();
   const [email, setEmail] = useState();
 
-  const handleCadastro = () => {
+  const SignUpAuth = FIREBASE_AUTH;
 
-    const credenciais = {
-      user,
-      pass,
-      vpass,
-      email
+  useEffect(() => {
+    const unsubscribe = FIREBASE_AUTH.onAuthStateChanged((user) => {
+      if (user) {
+        navigation.navigate("Home");
+      }
+    });
+    return unsubscribe;
+  }, []);
+
+  const handleSignUp = async () => {
+    try {
+      const response = await createUserWithEmailAndPassword(SignUpAuth, email, pass);
+      console.log(response);
+      alert('Cadastrado com sucesso!');
+    } catch (error) {
+      console.log(error);
+      alert('Falha no cadastro: ' + error.message)
     }
-
-    Cadastrar(credenciais)
-    };
-
-
+  };
 
   <Input holder={'Usuário'} valor={user} onChangeText={setUser}></Input>
 
@@ -35,8 +48,8 @@ export default function Cadastro() {
             source={require('../assets/Logo.png')}
           />
         
-        <Text style={styles.text}>Usuário</Text>
-        <Input holder='Insira seu usuário' valor={user} onChangeText={setUser}></Input>
+        {/* <Text style={styles.text}>Usuário</Text>
+        <Input holder='Insira seu usuário' valor={user} onChangeText={setUser}></Input> */}
 
         <Text style={styles.text}>E-mail</Text>
         <Input holder='Insira seu email' valor={email} onChangeText={setEmail}></Input>
@@ -44,15 +57,11 @@ export default function Cadastro() {
         <Text style={styles.text}>Senha</Text>
         <Input holder='Insira sua senha' valor={pass} onChangeText={setPass}></Input>
 
-        <Text style={styles.text}>Confirmar Senha</Text>
-        <Input holder='Confirme sua senha' valor={vpass} onChangeText={setVPass}></Input>
+        {/* <Text style={styles.text}>Confirmar Senha</Text>
+        <Input holder='Confirme sua senha' valor={vpass} onChangeText={setVPass}></Input> */}
 
+        <Botao texto={'CRIAR CONTA'} onPress={handleSignUp} ></Botao>
 
-        <Botao texto={'CRIAR CONTA'} onPress={handleCadastro} ></Botao>
-
-       
-  
-  
         <StatusBar style="auto" />
       </View>
       </TouchableWithoutFeedback>
