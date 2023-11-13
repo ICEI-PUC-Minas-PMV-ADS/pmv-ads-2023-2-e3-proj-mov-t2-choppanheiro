@@ -25,8 +25,8 @@ export default function Home() {
             source={require('../assets/Logo.png')}
           />
   
-        <Botao texto={'LOGIN'} onPress={tLogin} ></Botao>
-        <Botao texto={'CRIAR CONTA'} onPress={tCadastro} ></Botao>
+        <Botao texto={'LOGIN'} onPress={tLogin} style={{width:229, marginBottom:5}}></Botao>
+        <Botao texto={'CRIAR CONTA'} onPress={tCadastro} style={{width:229, marginBottom:5}}></Botao>
   
   
         <StatusBar style="auto" />

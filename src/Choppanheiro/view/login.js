@@ -2,9 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableWithoutFeedback } from 'react-native';
 import {Botao, Input, handlerTeclado, TextoBotao} from '../components/components';
 import { useState } from 'react';
-
-import Logar from '../controller/controller';
 import { useNavigation } from '@react-navigation/native';
+
+
+import { Logar } from '../controller/controller';
 
 
 export default function Login() {
@@ -23,7 +24,7 @@ export default function Login() {
       pass
     }
 
-    Logar(credenciais)
+    Logar(credenciais,navigation)
     };
 
 
@@ -38,7 +39,7 @@ export default function Login() {
 
         <Input holder={'Senha'} valor={pass} onChangeText={setPass}></Input>
 
-        <Botao texto={'Entrar'} onPress={handleEntrar}></Botao>
+        <Botao texto={'Entrar'} onPress={handleEntrar} style={{width:229, marginBottom:5}}></Botao>
 
         <TextoBotao onPress={tRecuperar} texto={'Esqueceu sua senha ?'}></TextoBotao>
   

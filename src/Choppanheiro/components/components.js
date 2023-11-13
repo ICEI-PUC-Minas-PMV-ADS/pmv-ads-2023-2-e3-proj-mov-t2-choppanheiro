@@ -1,10 +1,10 @@
-import { StyleSheet, Text, TouchableOpacity, TextInput, Keyboard } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, TextInput, Keyboard, View } from 'react-native';
+import {Avatar} from 'react-native-elements'
 
 
-
-export function Botao ({onPress, texto}) {
+export function Botao ({onPress, texto, style}) {
     return(
-        <TouchableOpacity style={[styles.botao]} onPress={onPress}>
+        <TouchableOpacity style={[style,styles.botao]} onPress={onPress}>
             <Text style={styles.textoBotao}>{texto}</Text>
         </TouchableOpacity>
     );
@@ -40,19 +40,34 @@ export function Input  ({holder, onChangeText})  {
 };
 
 
+export function Profile ({onPress, width, bgColor}) {
+  return(
+    <View style={{marginTop: 'auto', width:width, backgroundColor:bgColor}}>
+      <TouchableOpacity style={styles.profile} onPress={onPress}>
+        <Avatar
+          size={54}
+          rounded
+          icon={{ name: 'user', type: 'font-awesome' }}
+          containerStyle={{ borderWidth: 2, borderColor: '#FFFFFF' }}
+        />
+      </TouchableOpacity>
+    </View>
+  )
+}
+
+
+
 
 //CSS DOS COMPONENTS
 const styles = StyleSheet.create({
     botao: {
         elevation: 2,
+        padding:10,
         backgroundColor: '#F2A60C',
-        width: 229,
         height: 56,
         borderRadius: 5,
-        marginBottom: 20,
         justifyContent: 'center',
-        alignItems: 'center',
-        marginTop:20
+        alignItems: 'center'
       },
       textoBotao: {
         fontSize: 24,
@@ -70,6 +85,17 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         height: 45,
         width: '80%',
+      },
+      container: {
+        flex: 1,
+        justifyContent: 'flex-end', // Alinha o conteúdo ao final da tela
+        alignItems: 'center', // Centraliza horizontalmente
+        marginBottom: 16, // Adicione margem inferior conforme necessário
+      },
+      profile: {
+        padding: 10,
+        width: '100%',
+        alignItems: 'center',
       },
 });
 

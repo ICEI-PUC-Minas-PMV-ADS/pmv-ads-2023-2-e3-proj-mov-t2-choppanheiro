@@ -1,17 +1,17 @@
 import axios from 'axios';
+import { useNavigation } from '@react-navigation/native';
 
 
-
-// export function tPrincipal(navigation) {
-//     navigation.navigate('Principal')
-// }
+export function Logar(credenciais,navigation) {
 
 
+    const apiURL = 'http://192.168.100.58:3000/usuarios'
 
-export function Logar(credenciais) {
-    axios.get('http://192.168.100.58:3000/users')
+    axios.get(apiURL)
         .then((response) => {
             const userData = response.data;
+
+            console.log(userData)
 
             const validaLogin = userData.find((item) => credenciais.user === item.user & credenciais.pass === item.pass);
 
@@ -45,13 +45,13 @@ export function Cadastrar(credenciais) {
 
 
             if (validaUsuario) {
-                    // Usuario ou Email Já existe
+                // Usuario ou Email Já existe
             } else {
                 axios.post(apiURL, dados)
                 //Usuario foi cadastrado com sucesso
             }
 
- })
+        })
 };
 
 
