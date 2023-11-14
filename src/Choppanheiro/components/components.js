@@ -1,5 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity, TextInput, Keyboard, View } from 'react-native';
 import {Avatar} from 'react-native-elements'
+import { useState } from 'react';
 
 
 export function Botao ({onPress, texto, style}) {
@@ -40,10 +41,18 @@ export function Input  ({holder, onChangeText})  {
 };
 
 
-export function Profile ({onPress, width, bgColor}) {
+export function Profile ({width, bgColor}) {
+
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
+  };
+
+
   return(
-    <View style={{marginTop: 'auto', width:width, backgroundColor:bgColor}}>
-      <TouchableOpacity style={styles.profile} onPress={onPress}>
+    <View style={{marginTop: 'auto', width:width, backgroundColor:bgColor, alignItems: 'center'}}>
+      <TouchableOpacity style={styles.profile} onPress={toggleMenu}>
         <Avatar
           size={54}
           rounded
@@ -51,6 +60,27 @@ export function Profile ({onPress, width, bgColor}) {
           containerStyle={{ borderWidth: 2, borderColor: '#FFFFFF' }}
         />
       </TouchableOpacity>
+
+      {menuVisible && (
+          <View style={styles.menuProfile}>
+            {/* Opções do menu aqui */}
+            <TouchableOpacity style={{marginBottom: 2}} onPress={() => console.log('Sair')}>
+              <Text style={styles.menuText}>Minha Conta</Text>
+              <View style={{height: 1,width:100, backgroundColor:'#410404'}}></View>
+            </TouchableOpacity>
+            <TouchableOpacity style={{marginBottom: 2}} onPress={() => console.log('Sair')}>
+              <Text style={styles.menuText}>Histórico</Text>
+              <View style={{height: 1,width:100, backgroundColor:'#410404'}}></View>
+            </TouchableOpacity>
+            <TouchableOpacity style={{marginBottom: 2}} onPress={() => console.log('Sair')}>
+              <Text style={styles.menuText}>Sair</Text>
+              <View style={{height: 1,width:100 , backgroundColor:'#410404'}}></View>
+            </TouchableOpacity>
+     
+          </View>
+        )}
+
+
     </View>
   )
 }
@@ -67,7 +97,7 @@ const styles = StyleSheet.create({
         height: 56,
         borderRadius: 5,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
       },
       textoBotao: {
         fontSize: 24,
@@ -97,6 +127,24 @@ const styles = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
       },
+      menuProfile: {
+        alignItems:'center',
+        position: 'absolute',
+        zIndex:3,
+        bottom: 100,
+        backgroundColor: 'white',
+        width:229,
+        paddingTop:10,
+        paddingBottom:10,
+        borderRadius: 5,
+        elevation: 3,
+      },
+      menuText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginBottom: 2,
+      },
+
 });
 
 
