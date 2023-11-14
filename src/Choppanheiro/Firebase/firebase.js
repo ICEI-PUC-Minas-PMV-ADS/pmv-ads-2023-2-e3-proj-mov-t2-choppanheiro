@@ -18,8 +18,8 @@ const firebaseConfig = {
 // Initialize Firebase
 export const FIREBASE_APP = initializeApp(firebaseConfig);
 
-// Firebase auth
+// Firebase auth (Autenticação)
 export const FIREBASE_AUTH = getAuth(FIREBASE_APP);
 
-// Firestore
+// Firestore (Banco De dados Firebase) -- Não implementei nada ainda.
 export const FIRESTORE_DB = getFirestore(FIREBASE_APP);

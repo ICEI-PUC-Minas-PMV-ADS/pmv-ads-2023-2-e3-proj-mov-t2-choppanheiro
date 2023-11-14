@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Image, TouchableWithoutFeedback } from 'react-n
 import {Botao, Input, handlerTeclado, TextoBotao} from '../components/components';
 import { useState, useEffect } from 'react';
 
-import { FIREBASE_AUTH } from '../firebase'
+import { FIREBASE_AUTH } from '../Firebase/firebase'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { useNavigation } from '@react-navigation/native';
 
@@ -15,6 +15,7 @@ export default function Login() {
     navigation.navigate('Recuperar')
   }
 
+  //Hook Para Verificar o status da authenticação do usuário.
   useEffect(() => {
     const unsubscribe = FIREBASE_AUTH.onAuthStateChanged((user) => {
       if (user) {
@@ -29,6 +30,7 @@ export default function Login() {
 
   const SignUInAuth = FIREBASE_AUTH;
   
+  //Login do usuário com Firebase
   const handleLogin = async () => {
     try {
       const response = await signInWithEmailAndPassword(SignUInAuth, email, pass);

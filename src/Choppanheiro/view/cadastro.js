@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Image, TouchableWithoutFeedback, } from 'react-
 import {Botao, Input, handlerTeclado} from '../components/components';
 import { useState, useEffect } from 'react';
 
-import { FIREBASE_AUTH } from '../firebase'
+import { FIREBASE_AUTH } from '../Firebase/firebase'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { useNavigation } from '@react-navigation/native';
 
@@ -19,6 +19,7 @@ export default function SignUp() {
 
   const SignUpAuth = FIREBASE_AUTH;
 
+  //Hook Para Verificar o status da authenticação do usuário.
   useEffect(() => {
     const unsubscribe = FIREBASE_AUTH.onAuthStateChanged((user) => {
       if (user) {
@@ -28,6 +29,7 @@ export default function SignUp() {
     return unsubscribe;
   }, []);
 
+  //Criação de usuário Firebase
   const handleSignUp = async () => {
     try {
       const response = await createUserWithEmailAndPassword(SignUpAuth, email, pass);
