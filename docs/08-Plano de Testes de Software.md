@@ -2,21 +2,57 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
 
-|    Caso de teste    |                                                                 CT-01 - Cadastro de Perfil de Usuário                                                                |
+|    Caso de teste    | CT-01 - Cadastro de Perfil de Usuário|
 |:-------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| Requisito Associado |                                                    RF-01 - O aplicativo deve possibilitar o cadastro de usuários.                                                    |
-|  Objetivo do Teste  |                                             Verificar a funcionalidade de criar uma nova conta de usuário no aplicativo.                                             |
-|        Passos       | - Acessar o aplicativo.<br> - Pressionar o botão “Entrar”.<br> - Pressionar o botão “Nova Conta”.<br> - Preencher os campos de registro necessários.<br> - Pressionar o botão “Concluir Registro”. |
-|  Critério de Êxito  |                                                                       O cadastro foi efetivado.                                                                      |
+| Requisito Associado |RF-01 - O aplicativo deve possibilitar o cadastro de usuários.|
+|  Objetivo do Teste  |Verificar a funcionalidade de criar uma nova conta de usuário no aplicativo.|
+|        Passos       |Acessar o aplicativo.<br> - Pressionar o botão “Entrar”.<br> - Pressionar o botão “Nova Conta”.<br> - Preencher os campos de registro necessários.<br> - Pressionar o botão “Concluir Registro”. |
+|  Critério de Êxito  |O cadastro foi efetivado.|
 
-|    Caso de teste    |                                                       CT-02 - Login de um usuário                                                      |
+|    Caso de teste    | CT-02 - Login de um usuário|
 |:-------------------:|:--------------------------------------------------------------------------------------------------------------------------------------:|
-| Requisito Associado |                        RF-02 - O aplicativo deve permitir o login na conta cadastrada mediante usuário e senha.                        |
-|  Objetivo do Teste  |                                Verificar a funcionalidade de realizar o login do usuário no aplicativo.                                |
-|        Passos       | - Acessar o aplicativo.<br> - Pressionar o botão “Entrar”.<br> - Preencher os campos de identificação e senha.<br> - Pressionar o botão “Concluir Registro”. |
-|  Critério de Êxito  |           A tentativa de login for aceita ou negada caso os dados de login estejam corretos ou incorretos, respectivamente..           |
+| Requisito Associado |RF-02 - O aplicativo deve permitir o login na conta cadastrada mediante usuário e senha.|
+|  Objetivo do Teste  |Verificar a funcionalidade de realizar o login do usuário no aplicativo.|
+|        Passos       |Acessar o aplicativo.<br> - Pressionar o botão “Entrar”.<br> - Preencher os campos de identificação e senha.<br> - Pressionar o botão “Concluir Registro”. |
+|  Critério de Êxito  |A tentativa de login for aceita ou negada caso os dados de login estejam corretos ou incorretos, respectivamente.|
 
-|    Caso de teste    |                                          CT-03 - Criação de uma Mesa                                         |
+|    Caso de teste    |CT-03 - Adicionar itens consumidos pelo usuário.|
+|:-------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Requisito Associado |RF-03 - O aplicativo deve permitir a cada usuário anotar os itens que consumiu.|
+|  Objetivo do Teste  |Verificar a funcionalidade de adicionar itens consumidos pelo usuário.|
+|        Passos       |Usuário devidamente logado e participando de uma mesa aberta (pré-requisito).<br> - Pressionar o botão “+”.<br> - Preencher informações do item a ser adicionado.<br> - Pressionar o botão “Adicionar”.|
+|  Critério de Êxito  |Item corretamente adicionado.|
+
+|    Caso de teste    |CT-04 - Acompanhar gastos em tempo real|
+|:-------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Requisito Associado |RF-04 - O aplicativo deve permitir que os usuários tenham a capacidade de monitorar em tempo real o valor de sua conta individual a cada item consumido. |
+|  Objetivo do Teste  |Verificar a Funcionalidade de acompanhamento de gastos em tempo real.|
+|        Passos       |Usuário devidamente logado e participando de uma mesa aberta (pré-requisito).<br> - Visualizar os gastos conforme estão dispostos na tela.|
+|  Critério de Êxito  |Todos os valores estão sendo mostrados e estão corretos e atualizados em tempo real.|
+
+|    Caso de teste    |CT-05 - Visualizar os gastos quando a mesa for finalizado.|
+|:-------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Requisito Associado |RF-05 - O aplicativo deve informar aos usuários o total gasto pela mesa assim que ele encerrar a conta. |
+|  Objetivo do Teste  |Verificar a funcionalidade de encerramento de conta da mesa.|
+|        Passos       |Usuário devidamente logado e ter participado de uma mesa aberta (pré-requisito).|
+|  Critério de Êxito  | Será possível ver o(s) valor(es) dos gastos por mesa encerrada. |
+
+|    Caso de teste    |CT-06 - Escolher formas de divisão de contas.|
+|:-------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Requisito Associado |RF-06O aplicativo deve ser capaz de realizar a divisão da conta de duas formas: igualmente entre todos os membros do grupo ou individualmente.|
+|  Objetivo do Teste  |Verificar a funcionalidade de formas de divisão de contas.|
+|        Passos       |Usuário devidamente logado e participando de uma mesa aberta (pré-requisito).<br> - Selecionar a opção “Fechar Conta” e escolhar "Faz a boa" ou "Galera".|
+|  Critério de Êxito  |A mesa será encerrada e o(s) valor(es) de gastos será alocada ao(s) usuários(s) corretamente.|
+
+
+
+
+
+
+
+
+
+|    Caso de teste    |                                          CT-00 - Criação de uma Mesa                                         |
 |:-------------------:|:------------------------------------------------------------------------------------------------------------:|
 | Requisito Associado | RF-14 - O aplicativo deve permitir que os usuários criem uma mesa, incluir usuários nela e encerrar a conta. |
 |  Objetivo do Teste  |                                Verificar a funcionalidade de criação de mesas                                |
@@ -30,19 +66,13 @@
 |        Passos       | - Usuário devidamente logado e com uma mesa aberta (pré-requisito).<br> - Pressionar o botão “Adicionar Choppanheiro”.<br> - Selecionar usuário que será adicionado. |
 |  Critério de Êxito  |                                                 A inclusão bem-sucedida de um usuário na mesa aberta.                                                 |
 
-|    Caso de teste    |                                                                   CT-05 - Adicionar itens consumidos pelo usuário.                                                                   |
-|:-------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| Requisito Associado |                                                    RF-03 - O aplicativo deve permitir a cada usuário anotar os itens que consumiu.                                                   |
-|  Objetivo do Teste  |                                                        Verificar a funcionalidade de adicionar itens consumidos pelo usuário.                                                        |
-|        Passos       | - Usuário devidamente logado e participando de uma mesa aberta (pré-requisito).<br> - Pressionar o botão “+”.<br> - Preencher informações do item a ser adicionado.<br> - Pressionar o botão “Adicionar”. |
-|  Critério de Êxito  |                                                                             Item corretamente adicionado.                                                                            |
+                               |
 
-|    Caso de teste    |                                                          CT-06 - Acompanhar gastos em tempo real                                                          |
-|:-------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| Requisito Associado |  RF-04 - O aplicativo deve permitir que os usuários tenham a capacidade de monitorar em tempo real o valor de sua conta individual a cada item consumido. |
-|  Objetivo do Teste  |                                           Verificar a Funcionalidade de acompanhamento de gastos em tempo real.                                           |
-|        Passos       |            - Usuário devidamente logado e participando de uma mesa aberta (pré-requisito).<br> - Visualizar os gastos conforme estão dispostos na tela.           |
-|  Critério de Êxito  |                                    Todos os valores estão sendo mostrados e estão corretos e atualizados em tempo real.                                   |
+
+
+
+
+
 
 |    Caso de teste    |                                                   CT-07 - Selecionar Método de divisão da conta.                                                  |
 |:-------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------:|
