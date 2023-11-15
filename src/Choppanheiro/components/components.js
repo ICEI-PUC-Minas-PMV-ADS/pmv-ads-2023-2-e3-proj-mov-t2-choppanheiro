@@ -41,6 +41,35 @@ export function Input  ({holder, onChangeText})  {
 };
 
 
+export function Modal ({onChangeText, texto, style}) {
+
+  const [modalVisible, setModalVisible] = useState(false);
+      
+  const toggleMenu = () => {
+      setModalVisible(!modalVisible);
+    }
+
+  return(
+    <View>
+    <Botao texto={texto} onPress={toggleMenu} style={style}/>
+
+    {modalVisible && (
+      <View style={styles.modalInput}>
+        <TouchableOpacity style={{marginBottom: 2}} onPress={() => console.log('Sair')}>
+          <Input holder={'Insira o numero de pessoas'}></Input>
+        </TouchableOpacity>
+ 
+      </View>
+    )}
+    </View>
+
+  )
+
+
+}
+
+
+// Botao perfil
 export function Profile ({width, bgColor}) {
 
   const [menuVisible, setMenuVisible] = useState(false);
@@ -144,6 +173,18 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 2,
       },
+      modalInput: {
+        alignItems:'center',
+        position: 'absolute',
+        zIndex:3,
+        bottom: 100,
+        backgroundColor: 'white',
+        width:'100%',
+        paddingTop:10,
+        paddingBottom:10,
+        borderRadius: 5,
+        elevation: 3,
+      }
 
 });
 

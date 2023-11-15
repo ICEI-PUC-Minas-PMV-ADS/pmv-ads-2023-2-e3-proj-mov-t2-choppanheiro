@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import {Botao, Profile} from '../components/components';
 import { useNavigation } from '@react-navigation/native';
 
-
+import { Modal } from '../components/components';
 
 
 export default function Mesa() {
@@ -23,7 +23,7 @@ export default function Mesa() {
       <View style={{alignItems:'center', position:'absolute', padding:20, backgroundColor:'#FFFFFF', borderRadius: 10}}>
       {/* Linha 1 */}
       <View style={styles.rowContainer}>
-        <Botao texto={'NO DE PESSOAS'} style={{width:229}}  /*onPress={tCadastro}*/ />
+        <Modal texto={'No DE PESSOAS'} style={{width: 229}}></Modal>
       </View>
   
       {/* Linha 2 */}
