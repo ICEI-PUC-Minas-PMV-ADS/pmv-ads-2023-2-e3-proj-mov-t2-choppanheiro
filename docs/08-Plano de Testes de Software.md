@@ -1,6 +1,12 @@
 # Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+Os requisitos para realização dos testes de software são: 
+
+- Aplicativo disponível para utilizar em Android e IOS
+- Smartphones (Android e/ou IOS), ou emulador Mobile.
+- Conectividade de Internet para acesso ao aplicativo e às plataformas (APISs).
+
+Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 |    Caso de teste    | CT-01 - Cadastro de Perfil de Usuário|
 |:---:	|:---:	|
