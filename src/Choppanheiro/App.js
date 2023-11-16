@@ -45,9 +45,9 @@ export default function App() {
             header: () => null,
           }}
         />
-        <Stack.Screen name="Principal" component={Principal} />
-        <Stack.Screen name="Mesa" component={Mesa} />
-        <Stack.Screen name="MinhaConta" component={MinhaConta} />
+        <Stack.Screen name="Principal" component={Principal} options={{header: () => null}} />
+        <Stack.Screen name="Mesa" component={Mesa} options={{ header: () => null}} />
+        <Stack.Screen name="MinhaConta" component={MinhaConta} options={{header: () => null}} />
       </Stack.Navigator>
     </NavigationContainer>
   );
