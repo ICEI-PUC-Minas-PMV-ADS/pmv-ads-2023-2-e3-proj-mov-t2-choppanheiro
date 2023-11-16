@@ -68,6 +68,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |  Objetivo do Teste  | Verificar a funcionalidade de adicionar usuários a uma Mesa criada.|
 |        Passos       | Usuário devidamente logado e com uma mesa aberta (pré-requisito).<br> - Pressionar o botão “Adicionar Choppanheiro”.<br> - Selecionar usuário que será adicionado. |
 |  Critério de Êxito  | A inclusão bem-sucedida de um usuário na mesa aberta.|
+
 ## Ferramentas de Testes (Opcional)
 
 N/A
