@@ -10,6 +10,7 @@ import Recuperar from "./view/recuperar";
 import Principal from "./view/principal";
 import Mesa from "./view/mesa";
 import MinhaConta from "./view/account";
+import Pedido from "./view/pedidos"
 
 const Stack = createNativeStackNavigator();
 
@@ -41,6 +42,13 @@ export default function App() {
         <Stack.Screen
           name="Recuperar"
           component={Recuperar}
+          options={{
+            header: () => null,
+          }}
+        />
+        <Stack.Screen
+          name="Pedido"
+          component={Pedido}
           options={{
             header: () => null,
           }}

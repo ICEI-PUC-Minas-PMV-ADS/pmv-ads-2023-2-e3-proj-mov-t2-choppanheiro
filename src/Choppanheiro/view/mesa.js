@@ -15,6 +15,9 @@ export default function Mesa() {
   const tCadastro = () => {
     navigation.navigate("Cadastro");
   };
+  const tPedido = () => {
+    navigation.navigate("Pedido");
+  };
 
   return (
     <View style={styles.container}>
@@ -45,7 +48,7 @@ export default function Mesa() {
         <View style={styles.rowContainer}>
           <Botao
             texto={"FAZ A BOA"}
-            style={{ width: 229 }} /*onPress={tCadastro}*/
+            style={{ width: 229 }} onPress={tPedido}
           />
         </View>
 
