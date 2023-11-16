@@ -1,50 +1,74 @@
 # Plano de Testes de Usabilidade
 
-Testes de funcionalidades avaliam o funcionamento da ferramenta e sua aderência aos requisitos e especificações definidas na fase de planejamento do sistema. Testa-se, para cada componente, se o sistema responde corretamente às solicitações realizadas. 
+O teste de usabilidade permite avaliar a qualidade da interface com o usuário da aplicação móvel. O Plano de Testes de Software é gerado a partir da especificação do sistema e consiste em casos de testes que deverão ser executados quando a implementação estiver parcial ou totalmente pronta.
 
-O teste de usabilidade permite avaliar a qualidade da interface com o usuário do aplicativo, utilizando uma avaliação por observação. Por meio dele, são recolhidos dados sobre comportamento medindo e considerando as reações dos usuários diante de diferentes layouts e funcionalidades. Após sua realização, uma análise de usabilidade e das principais dificuldades é efetuada para realizar melhorias no aplicativo, proporcionando uma melhor experiência ao usuário.
+**Método Utilizado**: Medição e Avaliação
 
-## Teste Heurístico
+Para cada tarefa do participante é possível medir:
 
-A aplicação do teste heurístico será baseada nas 10 heurísticas de Nielsen (NIELSEN,2000), que são princípios de avaliação da usabilidade de interfaces com a finalidade de produzir boas interfaces que proporcionem boas experiências de usuário. Abaixo os 10 critérios do teste heurístico que serão aplicados:
+- Facilidade em realizar a ação;
+- Efetivação da tarefa;
+- Quantos erros ocorreram em cada ação;
+- Quanto tempo foi necessário para concluí-la;
+- Se a interface do sistema é apresentável.
 
-1-Visibilidade do Status do Sistema:
-Devemos verificar se a interface mantém os usuários informados, em tempo real, de onde estão e o que está acontecendo na tela;
-
-2-Correspondência entre o sistema e o mundo real:
-Verificar se o sistema apresenta a mesma linguagem que o usuário utiliza no cotidiano, como por exemplo: frases, imagens e símbolos.
-
-3-Controle e liberdade para o usuário:
-Verificar se o sistema permite que o usuário execute as ações que quiser e no caso de se arrepender existir a possibilidade de desfazer a ação de forma simples e visível.
-
-4- Consistência e padronização:
-Verificar se ações ou situações diferentes não tem o mesmo significado e se há consistência de padrões estéticos, de interação e informação.
-
-5-Prevenção de erros:
-Verificar se o sistema previne erros do usuário, seja confirmando se ele quer executar uma ação ou avisá-lo que não concluiu alguma tarefa.
-
-6-Reconhecimento em vez de recordação:
-Verificar se há poucas informações que o usuário precisa memorizar e se o que é realmente relevante está visível de forma que ele reconheça os padrões.
-
-7-Eficiência e flexibilidade de uso:
-Verificar se o sistema é intuitivo tanto para usuários leigos quanto para experientes e se possibilita que à medida que o usuário ganha experiência as ações sejam executadas de forma mais rápida, seja preenchendo informações ou por meio de atalhos.
-
-8-Estética e design minimalista:
-Verificar se a interface é minimalista e apresenta apenas as informações relevantes ao usuário, sem aumentar seu tempo de tomada de decisão ou confundi-lo. Também, verificar se o uso de abas e menus é feito adequadamente.
-
-9-Ajude os usuários a reconhecer, diagnosticar e recuperar erros:
-Verificar se o sistema orienta o usuário sobre qual erro ele cometeu e como corrigi-lo e se estão devidamente posicionadas na tela de forma que fique clara a associação pelo usuário.
-
-10-Ajuda e documentação:
-Verificar se há um local no sistema destinado para auxiliar e documentar as informações fundamentais sobre o sistema e seu funcionamento de forma simples e objetiva.
-
-Dessa forma, busca-se ao longo do desenvolvimento prever e eliminar os principais problemas de interação que podem ocorrer na solução. 
-
-## Descoberta dos Problemas
-
-Ao final do desenvolvimento e das aplicações dos testes heurísticos será realizado o teste de Descoberta dos Problema. De acordo com Jakob Nielsen (2000), com 5 usuários é possível identificar cerca de 80% dos problemas críticos de uma interface. 
-
-Com isso, para realização do teste serão recrutados 5 usuários interessados em participar da avaliação. Em seguida, contextos de utilização serão criados com tarefas que o usuário deve tentar realizar para avaliar se as interfaces relacionadas aos requisitos de alta e média prioridade são funcionais.
-Cada usuário será acompanhado de forma remota ou presencial por um membro da equipe. Cabe ao integrante do time observar e registrar os comentários, feitos pelo usuário participante do teste ou até mesmo percepções do próprio aplicador. Ainda, os contextos criados farão parte de um roteiro com as ações que os usuários devem testar, cabe ao aplicador sempre lembrar ao usuário participante que é a aplicação que está sendo testada e não o usuário. 
-
-Após todas as informações serem coletadas cabe à equipe realizar um comparativo dos resultados, para analisar e definir se e quais mudanças serão aplicadas para tornar a experiência do usuário mais agradável e efetiva na aplicação.
+|    Caso de teste    | CT-01 - Cadastro de Perfil de Usuário|
+|:---:	|:---:	|
+| Requisito Associado |RF-01 - O aplicativo deve possibilitar o cadastro de usuários.|
+|  Objetivo do Teste  |Verificar a funcionalidade de criar uma nova conta de usuário no aplicativo.|
+|        Passos       |Acessar o aplicativo.<br> - Pressionar o botão “Nova Conta”.<br> - Preencher os campos de registro necessários.<br> - Pressionar o botão “Concluir Registro”.|
+|  Critério de Êxito  |Mensagem de notificação de cadastro realizado com sucesso.|
+|  	|  	|
+|    Caso de teste    | CT-02 - Login de um usuário|
+| Requisito Associado |RF-02 - O aplicativo deve permitir o login na conta cadastrada mediante usuário e senha.|
+|  Objetivo do Teste  |realizar a autenticação utilizando os dados de usuários cadastrado.|
+|        Passos       |Acessar o aplicativo.<br> - Pressionar o botão “Login”.<br> - Preencher os campos de identificação e senha.<br> - Pressionar o botão “Concluir Registro”. |
+|  Critério de Êxito  |Mensagem de notificação de login realizado com sucesso ou usuário não cadastrado.|
+|  	|  	|
+|    Caso de teste    |CT-03 - Adicionar itens consumidos pelo usuário.|
+| Requisito Associado |RF-03 - O aplicativo deve permitir a cada usuário adicione a sua comanda os itens que consumiu.|
+|  Objetivo do Teste  |Verificar a funcionalidade de adicionar itens consumidos pelo usuário.|
+|        Passos       |Usuário devidamente logado e participando de uma mesa aberta (pré-requisito).<br> - Pressionar o botão “adicionar itens”.<br> - Preencher informações do item a ser adicionado.<br> - Pressionar o botão “Adicionar”.|
+|  Critério de Êxito  |Item corretamente adicionado.|
+|  	|  	|
+|    Caso de teste    |CT-04 - Acompanhar gastos em tempo real|
+| Requisito Associado |RF-04 - O aplicativo deve permitir que os usuários tenham a capacidade de monitorar em tempo real o valor de sua comanda individual a cada item consumido. |
+|  Objetivo do Teste  |Verificar a Funcionalidade de acompanhamento de gastos em tempo real.|
+|        Passos       |Usuário devidamente logado e participando de uma mesa aberta (pré-requisito).<br> - Visualizar os gastos conforme estão dispostos na tela.|
+|  Critério de Êxito  |Todos os valores estão sendo mostrados e estão corretos e atualizados em tempo real.|
+|  	|  	|
+|    Caso de teste    |CT-05 - Visualizar os gastos quando a mesa for finalizado.|
+| Requisito Associado |RF-05 - O aplicativo deve informar aos usuários o total gasto pela mesa assim que ele encerrar a conta. |
+|  Objetivo do Teste  |Verificar a funcionalidade de encerramento de conta da mesa.|
+|        Passos       |Usuário devidamente logado e ter participado de uma mesa aberta (pré-requisito).|
+|  Critério de Êxito  | Será possível ver o(s) valor(es) dos gastos por mesa encerrada. |
+|  	|  	|
+|    Caso de teste    |CT-06 - Escolher formas de divisão de contas.|
+| Requisito Associado |RF-06 aplicativo deve ser capaz de realizar a divisão da conta de duas formas: igualmente entre todos os membros do grupo ou individualmente.|
+|  Objetivo do Teste  |Verificar a funcionalidade de formas de divisão de contas.|
+|        Passos       |Usuário devidamente logado e participando de uma mesa aberta (pré-requisito).<br> - Selecionar a opção “Fechar Conta” e escolhar "Faz a boa" ou "Galera".|
+|  Critério de Êxito  |A mesa será encerrada e o(s) valor(es) de gastos será alocada ao(s) usuários(s) corretamente.|
+|  	|  	|
+|    Caso de teste    |CT-07 - Adição de gorjeta e Couvert|
+| Requisito Associado |RF-09 - O aplicativo deve permitir que os usuários possam adicionar uma quantia para gorjeta ou couvert à conta. Essa quantia será incluída na divisão final da conta..|
+|  Objetivo do Teste  |Verificar a funcionalidade de adição de valores de gorjeta e couvert|
+|        Passos       |Usuário devidamente logado e participando de uma mesa aberta (pré-requisito).<br> |
+|  Critério de Êxito  |valores adicionado a comanda corretamente.|
+|  	|  	|
+|    Caso de teste    | CT-08 - Visualização de histórico de divisões.|
+| Requisito Associado | RF-12 - O aplicativo deve permitir que os usuários acessem um histórico de encontros anteriores, fornecendo uma visão geral dos locais visitados e como os custos foram divididos em cada evento, permitindo aos usuários um melhor controle financeiro e uma revisão dos itens consumidos nos locais frequentados. |
+|  Objetivo do Teste  | Verificar a funcionalidade de histórico de divisões do usuário. |
+|        Passos       | Usuário devidamente logado(pré-requisito).<br> - Selecionar o menu “histórico”.<br> - Selecionar um item do histórico.|
+|  Critério de Êxito  | Visualização geral e individual dos itens dos histórico funcional e condizente com o que foi feito naquela divisão. |
+|  	|  	|
+|    Caso de teste    | CT-09 - Criação de uma Mesa |
+| Requisito Associado | RF-14 - O aplicativo deve permitir que os usuários criem uma mesa, incluir usuários nela e encerrar a conta. |
+|  Objetivo do Teste  | Verificar a funcionalidade de criação de mesas |
+|        Passos       | Usuário devidamente logado (pré-requisito).<br> - pressionar o botão “Nova Mesa”.|
+|  Critério de Êxito  | Criação de uma nova Mesa. |
+|  	|  	|
+|    Caso de teste    | CT-10 - Adição de outros usuários em uma Mesa |
+| Requisito Associado | RF-14 - O aplicativo deve permitir que os usuários criem uma mesa, incluir usuários nela e encerrar a conta.|
+|  Objetivo do Teste  | Verificar a funcionalidade de adicionar usuários a uma Mesa criada.|
+|        Passos       | Usuário devidamente logado e com uma mesa aberta (pré-requisito).<br> - Pressionar o botão “Adicionar Choppanheiro”.<br> - Selecionar usuário que será adicionado. |
+|  Critério de Êxito  | A inclusão bem-sucedida de um usuário na mesa aberta.|
