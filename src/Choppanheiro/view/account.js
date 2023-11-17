@@ -1,3 +1,4 @@
+import { AtualizarDados } from "../controller/controller";
 import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import {
@@ -28,7 +29,29 @@ const MinhaConta = ({ navigation }) => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = () => {
+    const { id, email, currentPassword, newPassword, confirmPassword, name } =
+      formData;
+
+    if (newPassword !== confirmPassword) {
+      console.log("As novas senhas não coincidem!");
+      return;
+    }
+
+    const credenciais = {
+      user: name,
+      pass: currentPassword,
+    };
+
+    const novasCredenciais = {
+      user: name,
+      email: email,
+      pass: newPassword,
+      vpass: confirmPassword,
+    };
+
+    AtualizarDados(credenciais, novasCredenciais);
+  };
 
   return (
     <View style={styles.container}>
@@ -94,10 +117,10 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   title: {
-    fontSize: 24,
+    fontSize: 36,
     fontWeight: "bold",
-    color: "#000",
-    alignSelf: "center",
+    color: "#410404",
+    alignSelf: "flex-start",
     marginVertical: 20,
   },
   label: {

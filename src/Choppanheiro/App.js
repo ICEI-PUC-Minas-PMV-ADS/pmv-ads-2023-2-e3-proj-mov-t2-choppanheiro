@@ -10,7 +10,7 @@ import Recuperar from "./view/recuperar";
 import Principal from "./view/principal";
 import Mesa from "./view/mesa";
 import MinhaConta from "./view/account";
-import Pedido from "./view/pedidos"
+import Pedido from "./view/pedidos";
 
 const Stack = createNativeStackNavigator();
 
@@ -53,9 +53,21 @@ export default function App() {
             header: () => null,
           }}
         />
-        <Stack.Screen name="Principal" component={Principal} options={{header: () => null}} />
-        <Stack.Screen name="Mesa" component={Mesa} options={{ header: () => null}} />
-        <Stack.Screen name="MinhaConta" component={MinhaConta} options={{header: () => null}} />
+        <Stack.Screen
+          name="Principal"
+          component={Principal}
+          options={{ header: () => null }}
+        />
+        <Stack.Screen
+          name="Mesa"
+          component={Mesa}
+          options={{ header: () => null }}
+        />
+        <Stack.Screen
+          name="MinhaConta"
+          component={MinhaConta}
+          options={{ header: () => null }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

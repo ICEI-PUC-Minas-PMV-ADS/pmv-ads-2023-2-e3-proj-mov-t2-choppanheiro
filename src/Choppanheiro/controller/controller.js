@@ -2,7 +2,7 @@ import axios from "axios";
 import { useNavigation } from "@react-navigation/native";
 
 export function Logar(credenciais, navigation) {
-  const apiURL = "http://192.168.18.6:3000/usuarios";
+  const apiURL = "http://192.168.50.136:3000/usuarios";
 
   axios.get(apiURL).then((response) => {
     const userData = response.data;
@@ -24,7 +24,7 @@ export function Logar(credenciais, navigation) {
 }
 
 export function Cadastrar(credenciais) {
-  const apiURL = "http://192.168.18.6:3000/usuarios";
+  const apiURL = "http://192.168.50.136:3000/usuarios";
 
   axios.get(apiURL).then((response) => {
     const userData = response.data;
@@ -48,10 +48,9 @@ export function Cadastrar(credenciais) {
       //Usuario foi cadastrado com sucesso
     }
   });
-  
 }
 export function Add(items) {
-  const apiURL = 'http://192.168.18.6:3000/pedidos';
+  const apiURL = "http://192.168.50.136:3000/pedidos";
 
   const dataAtual = new Date();
   const dataFormatada = dataAtual.toISOString();
@@ -63,15 +62,48 @@ export function Add(items) {
     dataCadastro: dataFormatada,
   };
 
-  axios.post(apiURL, dados)
+  axios
+    .post(apiURL, dados)
     .then((response) => {
-      console.log('Sucesso ao cadastrar', response.data);
+      console.log("Sucesso ao cadastrar", response.data);
     })
     .catch((error) => {
-      console.error('Erro ao cadastrar', error);
+      console.error("Erro ao cadastrar", error);
     });
 }
 
+export function AtualizarDados(credenciais, novasCredenciais) {
+  const apiURL = "http://192.168.50.136:3000/usuarios";
 
+  axios
+    .get(apiURL)
+    .then((response) => {
+      const userData = response.data;
 
+      const validaUsuario = userData.find(
+        (item) =>
+          credenciais.user === item.user && credenciais.pass === item.pass
+      );
 
+      if (validaUsuario) {
+        // Usuário validado, agora atualizamos os dados
+        axios
+          .put(`${apiURL}/${validaUsuario.id}`, novasCredenciais)
+          .then(() => {
+            console.log("Dados do usuário atualizados com sucesso!");
+            alert("Dados do usuário atualizados com sucesso!");
+          })
+          .catch((error) => {
+            console.error("Erro ao atualizar os dados do usuário:", error);
+            alert("Erro ao atualizar os dados do usuário.");
+          });
+      } else {
+        console.log("===FALHOU===: Nome de usuário ou senha incorretos");
+        alert("Nome de usuário ou senha incorretos.");
+      }
+    })
+    .catch((error) => {
+      console.error("Erro ao buscar os dados do usuário:", error);
+      alert("Erro ao buscar os dados do usuário.");
+    });
+}

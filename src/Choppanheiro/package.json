@@ -7,7 +7,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "json-server": "json-server --host 192.168.18.6 --watch db.json --port 3000"
+    "json-server": "json-server --host 192.168.50.136 --watch db.json --port 3000"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.8",
