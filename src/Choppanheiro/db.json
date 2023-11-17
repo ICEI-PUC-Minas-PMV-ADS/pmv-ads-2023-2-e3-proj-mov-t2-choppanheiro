@@ -1,10 +1,18 @@
 {
-  "pedidos": [    {
-      "item": "BATAT",
+  "pedidos": [
+    {
+      "item": "BATATA",
       "preco": "12,90",
       "valor": 2,
       "dataCadastro": "2023-11-16T23:21:28.282Z",
       "id": 2
+    },
+    {
+      "item": "ARROZ",
+      "preco": "10,55",
+      "valor": 2,
+      "dataCadastro": "2023-11-17T00:38:53.527Z",
+      "id": 3
     }
   ],
   "usuarios": [
@@ -21,6 +29,13 @@
       "user": "Pedro",
       "vpass": "ff",
       "id": 2
+    },
+    {
+      "email": "teste@teste.com",
+      "pass": "123",
+      "user": "Teste",
+      "vpass": "123",
+      "id": 3
     }
   ]
 }

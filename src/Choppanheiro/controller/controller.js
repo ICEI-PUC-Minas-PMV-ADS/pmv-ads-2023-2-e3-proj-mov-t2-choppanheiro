@@ -50,22 +50,28 @@ export function Cadastrar(credenciais) {
   });
   
 }
-export function Add(items){
-    
-  const apiURL = 'http://192.168.18.6:3000/pedidos'
+export function Add(items) {
+  const apiURL = 'http://192.168.18.6:3000/pedidos';
 
   const dataAtual = new Date();
   const dataFormatada = dataAtual.toISOString();
 
-  const dados ={
-      item: items.item,
-      preco: items.preco,
-      valor: items.valor,
-      dataCadastro: dataFormatada,
+  const dados = {
+    item: items.item,
+    preco: items.preco,
+    qtd: items.qtd,
+    dataCadastro: dataFormatada,
   };
+
   axios.post(apiURL, dados)
-      .then((response) =>{
-          console.log('Sucesso ao cadastrar', response.data);
-      })
-  
-};
+    .then((response) => {
+      console.log('Sucesso ao cadastrar', response.data);
+    })
+    .catch((error) => {
+      console.error('Erro ao cadastrar', error);
+    });
+}
+
+
+
+
