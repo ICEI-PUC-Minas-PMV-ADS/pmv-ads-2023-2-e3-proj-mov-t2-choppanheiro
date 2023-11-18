@@ -55,7 +55,7 @@ const MinhaConta = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.backgroundCircle} />
+      <View style={styles.formContainer}>
 
       <Text style={styles.title}>Minha conta</Text>
 
@@ -100,6 +100,7 @@ const MinhaConta = ({ navigation }) => {
       <TouchableOpacity style={styles.button} onPress={handleSubmit}>
         <Text style={styles.buttonText}>ALTERAR DADOS</Text>
       </TouchableOpacity>
+      </View>
 
       <Profile
         width={"100%"}
@@ -113,8 +114,8 @@ const MinhaConta = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignItems: 'center',
     backgroundColor: "#FFF",
-    padding: 20,
   },
   title: {
     fontSize: 36,
@@ -122,6 +123,7 @@ const styles = StyleSheet.create({
     color: "#410404",
     alignSelf: "flex-start",
     marginVertical: 20,
+    marginTop:60
   },
   label: {
     fontSize: 16,
@@ -134,6 +136,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 10,
     marginBottom: 15,
+    width:300
   },
   button: {
     backgroundColor: "#F2A60C",

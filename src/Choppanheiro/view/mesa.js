@@ -32,16 +32,13 @@ export default function Mesa() {
       >
         {/* Linha 1 */}
         <View style={styles.rowContainer}>
-          <Modal texto={"No DE PESSOAS"} style={{ width: 229 }}></Modal>
+          <Modal texto={"No DE PESSOAS"} style={{ width: 229 }} holder={'INSIRA O NUMERO DE PESSOAS'}></Modal>
         </View>
 
         {/* Linha 2 */}
         <View style={styles.rowContainer}>
-          <Botao
-            texto={"COUVERT"}
-            style={{ margin: 1 }} /*onPress={tCadastro}*/
-          />
-          <Botao texto={"GORJETA"} /*onPress={tCadastro}*/ />
+          <Modal texto={'COUVERT'} style={{margin: 1}} holder={'INSIRA O VALOR DO COUVERT'}></Modal>
+          <Modal texto={'GORJETA'} holder={'INSIRA O VALOR DA GORJETA'}></Modal>
         </View>
 
         {/* Linha 3 */}

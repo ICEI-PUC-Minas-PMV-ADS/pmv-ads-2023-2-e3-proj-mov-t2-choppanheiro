@@ -42,6 +42,8 @@ export function Input({ holder, onChangeText }) {
     />
   );
 }
+
+
 //Adiciona novo item
 export function Pedido({ onPress }) {
   const [item, setItem] = useState();
@@ -139,7 +141,10 @@ export function Pedido({ onPress }) {
   );
 }
 
-export function Modal({ onChangeText, texto, style }) {
+
+
+// Modal de inserçao
+export function Modal({ onChangeText, texto, style, holder }) {
   const [modalVisible, setModalVisible] = useState(false);
 
   const toggleMenu = () => {
@@ -156,7 +161,8 @@ export function Modal({ onChangeText, texto, style }) {
             style={{ marginBottom: 2 }}
             onPress={() => console.log("Sair")}
           >
-            <Input holder={"Insira o numero de pessoas"}></Input>
+            <Input holder={holder}></Input>
+          <Botao texto={'OK'} onPress={toggleMenu}></Botao>
           </TouchableOpacity>
         </View>
       )}
@@ -312,7 +318,6 @@ const styles = StyleSheet.create({
     position: "absolute",
     zIndex: 3,
     bottom: 100,
-    backgroundColor: "white",
     width: 229,
     paddingTop: 10,
     paddingBottom: 10,
