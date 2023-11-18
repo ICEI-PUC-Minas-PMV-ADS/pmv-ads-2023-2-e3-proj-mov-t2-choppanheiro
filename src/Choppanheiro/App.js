@@ -11,6 +11,7 @@ import Principal from "./view/principal";
 import Mesa from "./view/mesa";
 import MinhaConta from "./view/account";
 import Pedido from "./view/pedidos";
+import Historico from "./view/historico";
 
 const Stack = createNativeStackNavigator();
 
@@ -66,6 +67,11 @@ export default function App() {
         <Stack.Screen
           name="MinhaConta"
           component={MinhaConta}
+          options={{ header: () => null }}
+        />
+        <Stack.Screen
+          name="Historico"
+          component={Historico}
           options={{ header: () => null }}
         />
       </Stack.Navigator>

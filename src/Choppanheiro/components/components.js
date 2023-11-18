@@ -5,13 +5,11 @@ import {
   TextInput,
   Keyboard,
   View,
-
 } from "react-native";
 import { Avatar, Icon } from "react-native-elements";
 import { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
-import { Add } from '../controller/controller';
-
+import { Add } from "../controller/controller";
 
 export function Botao({ onPress, texto, style }) {
   return (
@@ -45,67 +43,101 @@ export function Input({ holder, onChangeText }) {
   );
 }
 //Adiciona novo item
-export function Pedido ({onPress}){ 
+export function Pedido({ onPress }) {
   const [item, setItem] = useState();
-  const [preco, setPreco] = useState(); 
+  const [preco, setPreco] = useState();
   const handleConfirm = () => {
-
     const items = {
       item,
       preco,
-      valor   
-      
-    }
-
-    Add(items)
+      valor,
     };
-    //Operação de Adição e Subtração
-  const [valor, setValor]= useState(0);
+
+    Add(items);
+  };
+  //Operação de Adição e Subtração
+  const [valor, setValor] = useState(0);
   const alterarValor = (operacao) => {
-    setValor(operacao === 'adicao' ? valor + 1 : valor - 1);
+    setValor(operacao === "adicao" ? valor + 1 : valor - 1);
   };
 
-  return(
-    <View style={{backgroundColor: '#F2F2F2', width:'100%', height: 440, borderRadius: 20, marginTop: 90}}>
+  return (
+    <View
+      style={{
+        backgroundColor: "#F2F2F2",
+        width: "100%",
+        height: 440,
+        borderRadius: 20,
+        marginTop: 90,
+      }}
+    >
       <View style={styles.container}>
         <Text>ITEM</Text>
-      <TextInput  holder='Item' style={styles.inputModal} valor={item} onChangeText={setItem} autoCapitalize="characters"/>
-      <Text>VALOR</Text>
-      <TextInput holder='R$:' style={styles.inputModal} valor={preco} onChangeText={setPreco} keyboardType='numeric'/>
-      
-      <View style={styles.rowContainer}>
-      <View style={styles.containerValor}>
-      <TextInput
-        style={styles.inputValorText}
-        value={valor.toString()}
-        keyboardType="numeric"
-        autoCapitalize="characters"
-        onChangeText={setValor}
-        editable={false} 
-      />      
-      </View>
-      <View style={styles.botoesContainer}>
-      <TouchableOpacity style={styles.botaoDois}  onPress={()=> alterarValor('adicao')}>
-        <Text style={styles.menuText}>+</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.botaoDois} onPress={()=> alterarValor('subtracao')}>
-        <Text style={styles.menuText}>-</Text>
-      </TouchableOpacity>
-      </View>
-      </View>
-      <Botao  texto={'CONFIRMAR'} onPress={handleConfirm}  /> 
+        <TextInput
+          holder="Item"
+          style={styles.inputModal}
+          valor={item}
+          onChangeText={setItem}
+          autoCapitalize="characters"
+        />
+        <Text>VALOR</Text>
+        <TextInput
+          holder="R$:"
+          style={styles.inputModal}
+          valor={preco}
+          onChangeText={setPreco}
+          keyboardType="numeric"
+        />
 
-      <TouchableOpacity onPress={onPress}>
-      <Icon name="arrow-back" type="material"
-      size={35}
-      rounded
-      containerStyle={{ borderWidth: 2, borderColor: '#410404', borderRadius: 100, width:50 , height:50, justifyContent: 'center',marginTop: 35}} />
-      </TouchableOpacity>
-      </View>      
-      
+        <View style={styles.rowContainer}>
+          <View style={styles.containerValor}>
+            <TextInput
+              style={styles.inputValorText}
+              value={valor.toString()}
+              keyboardType="numeric"
+              autoCapitalize="characters"
+              onChangeText={setValor}
+              editable={false}
+            />
+          </View>
+          <View style={styles.botoesContainer}>
+            <TouchableOpacity
+              style={styles.botaoDois}
+              onPress={() => alterarValor("adicao")}
+            >
+              <Text style={styles.menuText}>+</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.botaoDois}
+              onPress={() => alterarValor("subtracao")}
+            >
+              <Text style={styles.menuText}>-</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+        <Botao texto={"CONFIRMAR"} onPress={handleConfirm} />
+
+        <TouchableOpacity onPress={onPress}>
+          <Icon
+            name="arrow-back"
+            type="material"
+            size={35}
+            rounded
+            containerStyle={{
+              borderWidth: 2,
+              borderColor: "#410404",
+              borderRadius: 100,
+              width: 50,
+              height: 50,
+              justifyContent: "center",
+              marginTop: 35,
+            }}
+          />
+        </TouchableOpacity>
+      </View>
     </View>
-  )  
-};
+  );
+}
 
 export function Modal({ onChangeText, texto, style }) {
   const [modalVisible, setModalVisible] = useState(false);
@@ -168,15 +200,13 @@ export function Profile({ width, bgColor }) {
               style={{ height: 1, width: 100, backgroundColor: "#410404" }}
             ></View>
           </TouchableOpacity>
-          <TouchableOpacity
-            style={{ marginBottom: 2 }}
-            onPress={() => console.log("Sair")}
-          >
+          <TouchableOpacity onPress={() => navigation.navigate("Historico")}>
             <Text style={styles.menuText}>Histórico</Text>
             <View
               style={{ height: 1, width: 100, backgroundColor: "#410404" }}
             ></View>
           </TouchableOpacity>
+
           <TouchableOpacity
             style={{ marginBottom: 2 }}
             onPress={() => console.log("Sair")}
@@ -220,54 +250,51 @@ const styles = StyleSheet.create({
     height: 45,
     width: "80%",
   },
-  inputModal:{
+  inputModal: {
     marginBottom: 15,
     borderRadius: 6,
     paddingHorizontal: 10,
-    backgroundColor: '#FFBF00',
+    backgroundColor: "#FFBF00",
     height: 55,
-    width: '80%',
+    width: "80%",
     fontSize: 24,
-    fontWeight: '600',
-    color: '#410404',
-    textAlign: 'center',
-  },  
-  inputValorText:{
-    color:'#410404',
+    fontWeight: "600",
+    color: "#410404",
+    textAlign: "center",
+  },
+  inputValorText: {
+    color: "#410404",
     fontSize: 20,
-    alignItems: 'center',
-    justifyContent: 'center',
-  }, 
+    alignItems: "center",
+    justifyContent: "center",
+  },
   containerValor: {
-    flexDirection: 'row',
-    backgroundColor: '#FFBF00',
-    width: '22%',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    backgroundColor: "#FFBF00",
+    width: "22%",
+    alignItems: "center",
+    justifyContent: "center",
     borderRadius: 6,
   },
   botoesContainer: {
-    flexDirection: 'row',
-    width: '30%',
-    marginHorizontal: '50%',
-    
+    flexDirection: "row",
+    width: "30%",
+    marginHorizontal: "50%",
   },
   rowContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginHorizontal:85, 
-    marginBottom: 20
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginHorizontal: 85,
+    marginBottom: 20,
   },
-  botaoDois:{
-    backgroundColor: '#F2A60C',
+  botaoDois: {
+    backgroundColor: "#F2A60C",
     height: 56,
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: '80%',
+    justifyContent: "center",
+    alignItems: "center",
+    width: "80%",
     borderRadius: 10,
-    marginHorizontal: '35%',
-   
-    
+    marginHorizontal: "35%",
   },
   container: {
     flex: 1,
