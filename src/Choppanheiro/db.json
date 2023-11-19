@@ -2,17 +2,73 @@
   "pedidos": [
     {
       "item": "BATATA",
-      "preco": "12,90",
-      "valor": 2,
-      "dataCadastro": "2023-11-16T23:21:28.282Z",
-      "id": 2
+      "preco": "23,50",
+      "qtd": 1,
+      "dataCadastro": "2023-11-18T23:25:32.950Z",
+      "id": 4
     },
     {
       "item": "ARROZ",
-      "preco": "10,55",
-      "valor": 2,
-      "dataCadastro": "2023-11-17T00:38:53.527Z",
-      "id": 3
+      "preco": "22,50",
+      "qtd": 1,
+      "dataCadastro": "2023-11-19T01:43:33.048Z",
+      "id": 5
+    },
+    {
+      "item": "CERVEJA",
+      "preco": "1,20",
+      "qtd": 1,
+      "dataCadastro": "2023-11-19T01:50:11.584Z",
+      "id": 6
+    },
+    {
+      "item": "PICANHA",
+      "preco": "21,85",
+      "qtd": 2,
+      "dataCadastro": "2023-11-19T02:38:17.094Z",
+      "id": 7
+    },
+    {
+      "item": "PUDIM",
+      "preco": "21.85",
+      "qtd": 1,
+      "dataCadastro": "2023-11-19T02:38:26.926Z",
+      "id": 8
+    },
+    {
+      "item": "SUCO",
+      "preco": "21,85",
+      "qtd": 1,
+      "dataCadastro": "2023-11-19T02:38:30.077Z",
+      "id": 9
+    },
+    {
+      "item": "CAIPIRINHA",
+      "preco": "52,80",
+      "qtd": 2,
+      "dataCadastro": "2023-11-19T02:38:54.102Z",
+      "id": 10
+    },
+    {
+      "item": "CHOPP",
+      "preco": "10,25",
+      "qtd": 5,
+      "dataCadastro": "2023-11-19T02:51:13.431Z",
+      "id": 12
+    },
+    {
+      "item": "PICOLÉ",
+      "preco": "10,0",
+      "qtd": 1,
+      "dataCadastro": "2023-11-19T02:58:26.782Z",
+      "id": 13
+    },
+    {
+      "item": "AGUA",
+      "preco": "2,50",
+      "qtd": 1,
+      "dataCadastro": "2023-11-19T03:36:48.097Z",
+      "id": 14
     }
   ],
   "usuarios": [

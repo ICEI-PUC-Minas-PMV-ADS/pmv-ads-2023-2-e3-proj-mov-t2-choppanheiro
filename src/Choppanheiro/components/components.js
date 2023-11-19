@@ -5,11 +5,12 @@ import {
   TextInput,
   Keyboard,
   View,
+  ScrollView,
 } from "react-native";
 import { Avatar, Icon } from "react-native-elements";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
-import { Add } from "../controller/controller";
+import { Add, getPedidos } from "../controller/controller";
 
 export function Botao({ onPress, texto, style }) {
   return (
@@ -18,6 +19,14 @@ export function Botao({ onPress, texto, style }) {
     </TouchableOpacity>
   );
 }
+export function BotaoComanda({ onPress, texto, style }) {
+  return (
+    <TouchableOpacity style={[style, styles.botaoComanda]} onPress={onPress}>
+      <Text style={styles.textoBotao}>{texto}</Text>
+    </TouchableOpacity>
+  );
+}
+
 
 export function TextoBotao({ onPress, texto }) {
   return (
@@ -48,21 +57,22 @@ export function Input({ holder, onChangeText }) {
 export function Pedido({ onPress }) {
   const [item, setItem] = useState();
   const [preco, setPreco] = useState();
+  const [qtd, setValor] = useState(0);
+    //Operação de Adição e Subtração
+  const alterarValor = (operacao) => {
+    setValor(operacao === "adicao" ? qtd + 1 : qtd - 1);
+  };
+
   const handleConfirm = () => {
     const items = {
       item,
       preco,
-      valor,
+      qtd,
     };
 
     Add(items);
   };
-  //Operação de Adição e Subtração
-  const [valor, setValor] = useState(0);
-  const alterarValor = (operacao) => {
-    setValor(operacao === "adicao" ? valor + 1 : valor - 1);
-  };
-
+  
   return (
     <View
       style={{
@@ -74,7 +84,7 @@ export function Pedido({ onPress }) {
       }}
     >
       <View style={styles.container}>
-        <Text>ITEM</Text>
+        <Text style={styles.menuText}>ITEM</Text>
         <TextInput
           holder="Item"
           style={styles.inputModal}
@@ -82,7 +92,7 @@ export function Pedido({ onPress }) {
           onChangeText={setItem}
           autoCapitalize="characters"
         />
-        <Text>VALOR</Text>
+        <Text style={styles.menuText}>VALOR</Text>
         <TextInput
           holder="R$:"
           style={styles.inputModal}
@@ -95,7 +105,7 @@ export function Pedido({ onPress }) {
           <View style={styles.containerValor}>
             <TextInput
               style={styles.inputValorText}
-              value={valor.toString()}
+              value={qtd.toString()}
               keyboardType="numeric"
               autoCapitalize="characters"
               onChangeText={setValor}
@@ -118,7 +128,6 @@ export function Pedido({ onPress }) {
           </View>
         </View>
         <Botao texto={"CONFIRMAR"} onPress={handleConfirm} />
-
         <TouchableOpacity onPress={onPress}>
           <Icon
             name="arrow-back"
@@ -140,6 +149,121 @@ export function Pedido({ onPress }) {
     </View>
   );
 }
+export function Comanda({ onPress }) {
+  const [dadosPedidos, setDadosPedidos] = useState([]);
+  const [totalGeral, setTotalGeral] = useState(0);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const pedidos = await getPedidos();
+        setDadosPedidos(pedidos);
+        atualizarTotalGeral(pedidos);
+      } catch (error) {
+        console.error("Erro ao obter dados dos pedidos", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const incrementarQuantidade = (pedidoId) => {
+    setDadosPedidos((prevState) => {
+      const updatedPedidos = prevState.map((pedido) =>
+        pedido.id === pedidoId ? { ...pedido, qtd: pedido.qtd + 1 } : pedido
+      );
+      atualizarTotalGeral(updatedPedidos);
+      return updatedPedidos;
+    });
+  };
+
+  const decrementarQuantidade = (pedidoId) => {
+    setDadosPedidos((prevState) => {
+      const updatedPedidos = prevState.map((pedido) =>
+        pedido.id === pedidoId && pedido.qtd > 0
+          ? { ...pedido, qtd: pedido.qtd - 1 }
+          : pedido
+      );
+      atualizarTotalGeral(updatedPedidos);
+      return updatedPedidos;
+    });
+  };
+
+  const atualizarTotalGeral = (pedidos) => {
+    const total = pedidos.reduce((acc, pedido) => {
+      const precoDecimal = parseFloat(pedido.preco);
+      return acc + precoDecimal * pedido.qtd;
+    }, 0);
+    setTotalGeral(total);
+  };
+
+  return (
+    <View
+      style={{
+        backgroundColor: "#F2F2F2",
+        width: "100%",
+        height: 440,
+        borderRadius: 20,
+        marginTop: 90,
+      }}
+    >
+      <BotaoComanda
+        style={styles.botaoComanda}
+        texto={"COMANDA"}
+        onPress={onPress}
+      />
+      <ScrollView>
+        <View style={styles.containerPeidos}>
+          {dadosPedidos.map((pedido) => {
+            const precoDecimal = parseFloat(pedido.preco);
+
+            return (
+              <View key={pedido.id} style={styles.itemPedido}>
+                <Text style={styles.textoPedido}>
+                  {pedido.item} ...................... R$ {precoDecimal.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                </Text>
+                <View style={styles.controlesQuantidade}>
+                  <TouchableOpacity
+                    onPress={() => decrementarQuantidade(pedido.id)}
+                  >
+                    <Text style={styles.botaoControle}>-</Text>
+                  </TouchableOpacity>
+                  <Text style={{fontSize: 12, padding:5, margin: 2,}}>{pedido.qtd}</Text>
+                  <TouchableOpacity
+                    onPress={() => incrementarQuantidade(pedido.id)}
+                  >
+                    <Text style={styles.botaoControle}>+</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            );
+          })}
+        </View>
+        <View style={styles.containerTotal}>
+        <Text style={{fontSize: 16, fontWeight:'bold'}}>TOTAL:                                         R$ {totalGeral.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</Text>
+        </View>         
+      </ScrollView>
+      <TouchableOpacity style={{marginBottom: 25}} onPress={onPress}>
+          <Icon 
+            name="check"
+            type="material"
+            color="white"
+            size={35}
+            rounded
+            containerStyle={{
+              backgroundColor: "green",
+              borderRadius: 100,
+              width: 50,
+              height: 50,
+              justifyContent: "center",
+              alignSelf: 'center',               
+            }}
+          />
+        </TouchableOpacity>
+    </View>
+  );
+}
+
 
 
 
@@ -238,6 +362,47 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     justifyContent: "center",
     alignItems: "center",
+  },
+  botaoComanda: {
+    elevation: 2,
+    padding: 10,
+    backgroundColor: "#CCC",
+    height: 56,
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  containerPeidos:{
+    flex: 1,
+    marginTop: 10,
+    alignItems: 'center'
+  },
+  containerTotal:{
+    margin: '10%',
+    borderTopWidth: 5,
+    borderTopColor: '#ccc'
+    
+  },
+  itemPedido: {
+    flexDirection: 'row',
+    paddingVertical: 8,
+  },
+  textoPedido: {
+    fontSize: 16,
+    color: 'black',
+    marginBottom: 8,
+    
+  },
+  controlesQuantidade: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginLeft: 6,
+    marginBottom: 10
+  },
+  botaoControle: {
+    paddingHorizontal: 5,
+    fontSize: 14.5,
+    backgroundColor: '#cccc'
   },
   textoBotao: {
     fontSize: 24,

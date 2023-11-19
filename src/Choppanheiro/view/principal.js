@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
     transform: [{ rotate: "100deg" }],
   },
   img: {
+    marginTop:100,
     width: 200,
     height: 200,
     resizeMode: "contain",

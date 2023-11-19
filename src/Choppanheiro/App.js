@@ -54,6 +54,7 @@ export default function App() {
             header: () => null,
           }}
         />
+        
         <Stack.Screen
           name="Principal"
           component={Principal}

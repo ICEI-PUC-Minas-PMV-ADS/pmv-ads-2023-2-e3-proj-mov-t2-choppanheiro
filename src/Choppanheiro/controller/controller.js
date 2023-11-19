@@ -2,7 +2,7 @@ import axios from "axios";
 import { useNavigation } from "@react-navigation/native";
 
 export function Logar(credenciais, navigation) {
-  const apiURL = "http://192.168.100.58:3000/usuarios";
+  const apiURL = "http://192.168.18.6:3000/usuarios";
 
   axios.get(apiURL).then((response) => {
     const userData = response.data;
@@ -24,7 +24,7 @@ export function Logar(credenciais, navigation) {
 }
 
 export function Cadastrar(credenciais) {
-  const apiURL = "http://192.168.100.58:3000/usuarios";
+  const apiURL = "http://192.168.18.6:3000/usuarios";
 
   axios.get(apiURL).then((response) => {
     const userData = response.data;
@@ -50,7 +50,7 @@ export function Cadastrar(credenciais) {
   });
 }
 export function Add(items) {
-  const apiURL = "http://192.168.100.58:3000/pedidos";
+  const apiURL = "http://192.168.18.6:3000/pedidos";
 
   const dataAtual = new Date();
   const dataFormatada = dataAtual.toISOString();
@@ -62,18 +62,49 @@ export function Add(items) {
     dataCadastro: dataFormatada,
   };
 
-  axios
-    .post(apiURL, dados)
+  axios.get(apiURL)
     .then((response) => {
-      console.log("Sucesso ao cadastrar", response.data);
+      const itemExistente = response.data.find((item) => {
+        return item.item === items.item && item.preco === items.preco;
+      });
+
+      if (itemExistente) {
+        // Cria um novo objeto mantendo os dados existentes, apenas atualizando a quantidade
+        const novoItem = {
+          ...itemExistente,
+          qtd: itemExistente.qtd + items.qtd,
+        };
+
+        // Atualiza apenas a quantidade usando uma solicitação PUT
+        return axios.put(`${apiURL}/${itemExistente.id}`, novoItem);
+      } else {
+        // Se não existir, adiciona um novo item
+        return axios.post(apiURL, dados);
+      }
+    })
+    .then((response) => {
+      const { item, preco, dataCadastro, id } = response.data;
+      console.log(`Sucesso ao cadastrar ou atualizar. Item: ${item}, Preço: ${preco}, Data de Cadastro: ${dataCadastro}, ID: ${id}`, response.data);
     })
     .catch((error) => {
-      console.error("Erro ao cadastrar", error);
+      console.error("Erro ao cadastrar ou atualizar", error);
     });
 }
+export async function getPedidos() {
+  const apiURL = "http://192.168.18.6:3000/pedidos";
+
+  try {
+    const response = await axios.get(apiURL);
+    return response.data;
+  } catch (error) {
+    console.error("Erro ao recuperar dados dos pedidos", error);
+    throw error;
+  }
+}
+
 
 export function AtualizarDados(credenciais, novasCredenciais) {
-  const apiURL = "http://192.168.50.136:3000/usuarios";
+  const apiURL = "http://192.168.18.6:3000/usuarios";
 
   axios
     .get(apiURL)
