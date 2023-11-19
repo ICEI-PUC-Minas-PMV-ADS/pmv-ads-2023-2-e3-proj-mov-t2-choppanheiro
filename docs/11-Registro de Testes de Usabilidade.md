@@ -33,7 +33,7 @@ Os resultados obtidos nos testes foram registrados em tabelas, conforme abaixo:
 **CT-03 - Adicionar itens consumidos pelo usuário. **
 | **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- 	| --- | ---  | --- | --- | --- |
-| Usuário 1	| 27 anos| CT-03 | 00:00:40 | 8 | 0  | - | Gostou da interface |
+| Usuário 1	| 27 anos| CT-03 | 00:00:40 | 8  | 0  | - | Gostou da interface |
 | Usuário 2 | 46 anos| CT-03 | 00:00:42 | 10 | 0 | - | Gostou da interface |
 | Usuário 3	| 21 anos| CT-03 | 00:00:27 | 6  | 0 | - | Gostou da interface |
 | Usuário 4	| 26 anos| CT-03 | 00:00:33 | 6  | 0 | - | Gostou da interface |
@@ -60,11 +60,11 @@ Os resultados obtidos nos testes foram registrados em tabelas, conforme abaixo:
 **CT-06 - Escolher formas de divisão de contas. **
 | **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- 	| --- | ---  | --- | --- | --- |
-| Usuário 1	| 27 anos| CT 06| 00:00:10 | - | - | - | --- |
-| Usuário 2 | 46 anos| CT 06| 00:00:06 | - | - | - | --- |
-| Usuário 3	| 21 anos| CT 06| 00:00:05 | - | - | - | --- |
-| Usuário 4	| 26 anos| CT 06| 00:00:07 | - | - | - | Sugeriu passar o input de valores de Gorjeta e Couvert para depois que clicasse em fechar conta |
-| Usuário 5	| 37 anos| CT 06| 00:00:10 | - | - | - | Sugeriu mudar ordem dos inputs "Faz" a "boa e Galera" e remover o input de adicionar item após clicar em uma das opções de divisão de contas |
+| Usuário 1	| 27 anos| CT 06| 00:00:10 | 4 | 0 | - | Sugeriu colocar o nome da comanda de "comanda geral da mesa", pois ficou na dúvida sobre qual comanda era|
+| Usuário 2 | 46 anos| CT 06| 00:00:06 | 5 | 0 | - | --- |
+| Usuário 3	| 21 anos| CT 06| 00:00:05 | 4 | 0 | - | --- |
+| Usuário 4	| 26 anos| CT 06| 00:00:07 | 5 | 0 | - | Sugeriu passar o input de valores de Gorjeta e Couvert para depois que clicasse em fechar conta |
+| Usuário 5	| 37 anos| CT 06| 00:00:10 | 3 | 0 | - | Sugeriu mudar ordem dos inputs "Faz" a "boa e Galera" e remover o input de adicionar item após clicar em uma das opções de divisão de contas |
 
 **CT-07 - Adição de gorjeta e Couvert. **
 | **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
@@ -87,19 +87,19 @@ Os resultados obtidos nos testes foram registrados em tabelas, conforme abaixo:
 **CT-09 - Criação de uma Mesa **
 | **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- 	| --- | ---  | --- | --- | --- |
-| Usuário 1	| 27 anos	| CT 09| 00:00:00 | - | - | - | --- |
-| Usuário 2 | 46 anos| CT 09 | 00:00:00 | - | - | - | --- |
-| Usuário 3	| 21 anos| CT 09 | 00:00:00 | - | - | - | --- |
-| Usuário 4	| 26 anos| CT 09 | 00:00:00 | - | - | - | --- |
-| Usuário 5	| 37 anos| CT 09 | 00:00:00 | - | - | - | --- |
+| Usuário 1	| 27 anos	| CT 09| 00:00:03 | 1 | 0 | - | --- |
+| Usuário 2 | 46 anos| CT 09 | 00:00:03 | 1 | 0 | - | --- |
+| Usuário 3	| 21 anos| CT 09 | 00:00:02 | 1 | 0 | - | --- |
+| Usuário 4	| 26 anos| CT 09 | 00:00:02 | 1 | 0 | - | --- |
+| Usuário 5	| 37 anos| CT 09 | 00:00:02 | 1 | 0 | - | --- |
 
 ****CT-10 - Adição de outros usuários em uma Mesa**
 | **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- 	| --- | ---  | --- | --- | --- |
-| Usuário 1	| 27 anos| CT 10 | 00:00:00 | - | - | - | --- |
-| Usuário 2 | 46 anos| CT 10 | 00:00:00 | - | - | - | --- |
-| Usuário 3	| 21 anos| CT 10 | 00:00:00 | - | - | - | --- |
-| Usuário 4	| 26 anos| CT 10 | 00:00:00 | - | - | - | --- |
-| Usuário 5	| 37 anos| CT 10 | 00:00:00 | - | - | - | --- |
+| Usuário 1	| 27 anos| CT 07| 00:00:06 | 3 | - | - | Sugeriu que colocasse os modais para abri mais centralizado|
+| Usuário 2 | 46 anos| CT 07| 00:00:07 | 3 | - | - | Sugeriu que colocasse os modais para abri mais centralizado|
+| Usuário 3	| 21 anos| CT 07| 00:00:05 | 3 | - | - | Sugeriu que colocasse os modais para abri mais centralizado|
+| Usuário 4	| 26 anos| CT 07| 00:00:05 | 3 | - | - | Sugeriu que colocasse os modais para abri mais centralizado|
+| Usuário 5	| 37 anos| CT 07| 00:00:06 | 3 | - | - | Sugeriu que colocasse os modais para abri mais centralizado|
 
 
