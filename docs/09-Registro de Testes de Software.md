@@ -36,7 +36,7 @@
 | Requisito Associado |RF-06 aplicativo deve ser capaz de realizar a divisão da conta de duas formas: igualmente entre todos os membros do grupo "GALERA" ou individualmente "FAZ A BOA".|
 |  Objetivo do Teste  |Verificar a funcionalidade de formas de divisão de contas.|
 |        Tela         |![formas de encerramento de conta](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/4a904ca7-8205-483f-a96c-d6733af74d1a)|
-|      Observação     |Imprementar a função "Faz a boa"|
+|      Observação     |Implementar toda a função "Faz a boa" e "Galera"|
 |  	|  	|
 |    Caso de teste    |CT-09 Criação de uma Mesa.<br> CT-10 - Adição de numero de usuários em uma Mesa.<br> CT-07 - Adição de valores gorjeta e Couvert. |
 | Requisito Associado |RF-14 - O aplicativo deve permitir que os usuários criem uma mesa, incluir usuários nela.<br> - RF-09 - O aplicativo deve permitir que os usuários possam adicionar uma quantia para gorjeta ou couvert à conta. Essa quantia será incluída na divisão final da conta.|
