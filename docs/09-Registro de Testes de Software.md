@@ -24,7 +24,7 @@
 | Requisito Associado |RF-04 - O aplicativo deve permitir que os usuários tenham a capacidade de monitorar em tempo real o valor de sua comanda individual a cada item consumido. |
 |  Objetivo do Teste  |Verificar a Funcionalidade de acompanhamento de gastos em tempo real.|
 |        Tela         |![Comanda - Historico](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/592bdd9e-49b6-4137-94b5-bb2d56a5dacf)|
-|      Observação     |Nenhum|
+|      Observação     |Nenhuma|
 |  	|  	|
 |    Caso de teste    |CT-05 - Visualizar os gastos quando a mesa for encerrada.|
 | Requisito Associado |RF-05 - O aplicativo deve informar aos usuários o total gasto pela mesa assim que ele encerrar a conta. |
@@ -35,8 +35,8 @@
 |    Caso de teste    |CT-06 - Escolher formas de divisão de contas.|
 | Requisito Associado |RF-06 aplicativo deve ser capaz de realizar a divisão da conta de duas formas: igualmente entre todos os membros do grupo "GALERA" ou individualmente "FAZ A BOA".|
 |  Objetivo do Teste  |Verificar a funcionalidade de formas de divisão de contas.|
-|        Tela         |![Tela informações mesa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/f92fbc6f-9002-43dd-896d-46266146dd5a)|
-|      Observação     |Desenvolver a função|
+|        Tela         |![formas de encerramento de conta](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/4a904ca7-8205-483f-a96c-d6733af74d1a)|
+|      Observação     |Imprementar a função "Faz a boa"|
 |  	|  	|
 |    Caso de teste    |CT-09 Criação de uma Mesa.<br> CT-10 - Adição de numero de usuários em uma Mesa.<br> CT-07 - Adição de valores gorjeta e Couvert. |
 | Requisito Associado |RF-14 - O aplicativo deve permitir que os usuários criem uma mesa, incluir usuários nela.<br> - RF-09 - O aplicativo deve permitir que os usuários possam adicionar uma quantia para gorjeta ou couvert à conta. Essa quantia será incluída na divisão final da conta.|
