@@ -30,7 +30,7 @@
 | Requisito Associado |RF-05 - O aplicativo deve informar aos usuários o total gasto pela mesa assim que ele encerrar a conta. |
 |  Objetivo do Teste  |Verificar a funcionalidade de encerramento de conta da mesa.|
 |        Tela         |![Tela histórico comanda CONSUMAÇÃO](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/75b54f37-15b0-43fc-a022-fc1514ae386b)|
-|      Observação     |Desenvolver a função|1
+|      Observação     |Exibição da função|
 |  	|  	|
 |    Caso de teste    |CT-06 - Escolher formas de divisão de contas.|
 | Requisito Associado |RF-06 aplicativo deve ser capaz de realizar a divisão da conta de duas formas: igualmente entre todos os membros do grupo "GALERA" ou individualmente "FAZ A BOA".|
