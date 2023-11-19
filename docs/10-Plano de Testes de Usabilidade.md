@@ -12,7 +12,7 @@ Para cada tarefa do participante é possível medir:
 - Quanto tempo foi necessário para concluí-la;
 - Se a interface do sistema é apresentável.
 
-|    Caso de teste    | CT-01 - Cadastro de Perfil de Usuário|
+|    Caso de teste    | CT-01 - Cadastro de Usuário|
 |:---:	|:---:	|
 | Requisito Associado |RF-01 - O aplicativo deve possibilitar o cadastro de usuários.|
 |  Objetivo do Teste  |Verificar a funcionalidade de criar uma nova conta de usuário no aplicativo.|
