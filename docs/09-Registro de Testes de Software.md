@@ -17,7 +17,7 @@
 |    Caso de teste    |CT-03 - Adicionar itens consumidos pelo usuário.|
 | Requisito Associado |RF-03 - O aplicativo deve permitir a cada usuário adicione a sua comanda os itens que consumiu.|
 |  Objetivo do Teste  |Verificar a funcionalidade de adicionar itens consumidos pelo usuário.|
-|        Tela         |![Cadstro de usuários](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/57549c81-e470-4f31-907f-a78878c68ab0)|
+|        Tela         |![Adicionar itens](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/66f794a9-e0f4-4b29-b7c8-95adbbbbddbd)|
 |      Observação     |Pendente mensagem de falha.|
 |  	|  	|
 |    Caso de teste    |CT-04 - Acompanhar gastos em tempo real|
