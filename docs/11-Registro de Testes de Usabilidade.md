@@ -1,14 +1,7 @@
 
 # Registro de Testes de Usabilidade
 
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
-
-Os resultados obtidos nos testes foram registrados em tabelas, conforme abaixo:
-
-
-# Registro de Testes de Usabilidade
-
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
+O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
 
 Os resultados obtidos nos testes foram registrados em tabelas, conforme abaixo:
 
@@ -19,7 +12,7 @@ Os resultados obtidos nos testes foram registrados em tabelas, conforme abaixo:
 | Usuário 2 | 46 anos| CT-01 | 00:00:27 | 6 | 0 | - |---|
 | Usuário 3	| 21 anos| CT-01 | 01:00:27 | 6 | 0 | - | citou a falta de segurança das senhas|
 | Usuário 4	| 26 anos| CT-01 | 00:00:38 | 6 | 0 | - | Achou fácil o cadastro|
-| Usuário 5	| 37 anos| CT-01 | 00:00:54 | 6 | 1 | - | citou a falta de notificação em caso de dado ja cadastrado |
+| Usuário 5	| 37 anos| CT-01 | 00:00:54 | 6 | 1 | - | citou a falta de notificação em caso de dado já cadastrado |
 
 **CT-02 - Login de usuário **
 | **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
@@ -33,7 +26,7 @@ Os resultados obtidos nos testes foram registrados em tabelas, conforme abaixo:
 **CT-03 - Adicionar itens consumidos pelo usuário. **
 | **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- 	| --- | ---  | --- | --- | --- |
-| Usuário 1	| 27 anos| CT-03 | 00:00:40 | 8  | 0  | - | Gostou da interface |
+| Usuário 1	| 27 anos| CT-03 | 00:00:40 | 8  | 0 | - | Gostou da interface |
 | Usuário 2 | 46 anos| CT-03 | 00:00:42 | 10 | 0 | - | Gostou da interface |
 | Usuário 3	| 21 anos| CT-03 | 00:00:27 | 6  | 0 | - | Gostou da interface |
 | Usuário 4	| 26 anos| CT-03 | 00:00:33 | 6  | 0 | - | Gostou da interface |
