@@ -8,7 +8,7 @@ Os requisitos para realização dos testes de software são:
 
 Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
-|    Caso de teste    | CT-01 - Cadastro de Perfil de Usuário|
+|    Caso de teste    | CT-01 - Cadastro de Usuário|
 |:---:	|:---:	|
 | Requisito Associado |RF-01 - O aplicativo deve possibilitar o cadastro de usuários.|
 |  Objetivo do Teste  |Verificar a funcionalidade de criar uma nova conta de usuário no aplicativo.|
