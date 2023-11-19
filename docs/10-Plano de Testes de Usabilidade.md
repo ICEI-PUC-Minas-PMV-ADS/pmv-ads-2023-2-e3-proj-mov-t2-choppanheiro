@@ -6,11 +6,12 @@ O teste de usabilidade permite avaliar a qualidade da interface com o usuário d
 
 Para cada tarefa do participante é possível medir:
 
+- Quanto tempo foi necessário para concluí-la;
 - Facilidade em realizar a ação;
 - Efetivação da tarefa;
 - Quantos erros ocorreram em cada ação;
-- Quanto tempo foi necessário para concluí-la;
 - Se a interface do sistema é apresentável.
+- Sugestão e melhorias;
 
 |    Caso de teste    | CT-01 - Cadastro de Usuário|
 |:---:	|:---:	|
