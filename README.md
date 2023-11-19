@@ -24,7 +24,7 @@ Este projeto visa resolver o desafio de dividir equitativamente a conta entre am
 * Geison Amorim Marçal
 * Lucas Guilherme dos Reis
 * Marlon Cezar de Almeida dos Santos
-* Pablo Muriell Batista Alves
+* ~Pablo Muriell Batista Alves~
 * Victor Kingma
 
 ## Orientador
