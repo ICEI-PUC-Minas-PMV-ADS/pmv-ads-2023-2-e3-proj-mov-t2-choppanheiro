@@ -52,6 +52,17 @@ export function Input({ holder, onChangeText }) {
   );
 }
 
+// Input Com mascara de segurança 
+export function InputSecure({ holder, onChangeText, secureTextEntry }) {
+  return (
+    <TextInput
+      style={styles.input}
+      placeholder={holder}
+      onChangeText={onChangeText}
+      secureTextEntry={true}
+    />
+  );
+}
 
 //Adiciona novo item
 export function Pedido({ onPress }) {

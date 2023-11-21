@@ -4,13 +4,13 @@ import {
   Text,
   View,
   Image,
-  TouchableWithoutFeedback,
+  TouchableWithoutFeedback, Alert
 } from "react-native";
 import {
   Botao,
   Input,
   handlerTeclado,
-  TextoBotao,
+  TextoBotao, InputSecure
 } from "../components/components";
 import { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
@@ -23,16 +23,26 @@ export default function Login() {
     navigation.navigate("Recuperar");
   };
 
-  const [user, setUser] = useState();
-  const [pass, setPass] = useState();
+  const [user, setUser] = useState("");
+  const [pass, setPass] = useState("");
 
-  const handleEntrar = () => {
+  const handleEntrar = async () => {
     const credenciais = {
       user,
       pass,
     };
 
-    Logar(credenciais, navigation);
+    try {
+      const loginBemSucedido = await Logar(credenciais, navigation);
+
+      if (!loginBemSucedido) { Alert.alert('Login bem-sucedido', 'Você entrou com sucesso!');
+      } else {
+        Alert.alert('Erro no Login', 'Verifique suas credenciais e tente novamente.');
+      }
+    } catch (error) {
+      console.error('Erro durante o login', error);
+      Alert.alert('Erro no Login', 'Ocorreu um erro durante o login. Por favor, tente novamente.');
+    }
   };
 
   return (
@@ -42,7 +52,7 @@ export default function Login() {
 
         <Input holder={"Usuário"} valor={user} onChangeText={setUser}></Input>
 
-        <Input holder={"Senha"} valor={pass} onChangeText={setPass}></Input>
+        <InputSecure holder={"Senha"} valor={pass} onChangeText={setPass}></InputSecure>
 
         <Botao
           texto={"Entrar"}
