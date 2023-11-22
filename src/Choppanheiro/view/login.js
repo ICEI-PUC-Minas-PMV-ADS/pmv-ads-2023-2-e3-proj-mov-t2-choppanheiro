@@ -31,13 +31,22 @@ export default function Login() {
       user,
       pass,
     };
-
+  
     try {
       const loginBemSucedido = await Logar(credenciais, navigation);
-
-      if (!loginBemSucedido) { Alert.alert('Login bem-sucedido', 'Você entrou com sucesso!');
-      } else {
+  
+      if (loginBemSucedido) {
+        // Login falhou
         Alert.alert('Erro no Login', 'Verifique suas credenciais e tente novamente.');
+      } else {
+
+        // Login bem-sucedido
+        Alert.alert('Login bem-sucedido', 'Você entrou com sucesso!', [
+          {
+            text: 'OK',
+            onPress: () => navigation.navigate('Principal'), // Redirecionar para a tela "Principal"
+          },
+        ]);
       }
     } catch (error) {
       console.error('Erro durante o login', error);
