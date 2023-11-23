@@ -8,7 +8,7 @@ export default function Principal() {
   const navigation = useNavigation();
 
   const tMesa = () => {
-    navigation.navigate("Mesa");
+    navigation.navigate("Pedido");
   };
   return (
     <View style={styles.container}>

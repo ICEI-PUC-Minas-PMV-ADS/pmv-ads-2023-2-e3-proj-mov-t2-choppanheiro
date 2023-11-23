@@ -2,7 +2,7 @@ import axios from "axios";
 import { useNavigation } from "@react-navigation/native";
 
 export function Logar(credenciais, navigation) {
-  const apiURL = "http://192.168.18.6:3000/usuarios";
+  const apiURL = "http://192.168.100.100:3000/usuarios";
 
   axios.get(apiURL).then((response) => {
     const userData = response.data;
@@ -24,7 +24,7 @@ export function Logar(credenciais, navigation) {
 }
 
 export function Cadastrar(credenciais) {
-  const apiURL = "http://192.168.18.6:3000/usuarios";
+  const apiURL = "http://192.168.100.100:3000/usuarios";
 
   axios.get(apiURL).then((response) => {
     const userData = response.data;
@@ -50,7 +50,7 @@ export function Cadastrar(credenciais) {
   });
 }
 export function Add(items) {
-  const apiURL = "http://192.168.18.6:3000/pedidos";
+  const apiURL = "http://192.168.100.100:3000/pedidos";
 
   const dataAtual = new Date();
   const dataFormatada = dataAtual.toISOString();
@@ -91,7 +91,7 @@ export function Add(items) {
     });
 }
 export async function getPedidos() {
-  const apiURL = "http://192.168.18.6:3000/pedidos";
+  const apiURL = "http://192.168.100.100:3000/pedidos";
 
   try {
     const response = await axios.get(apiURL);
@@ -104,7 +104,7 @@ export async function getPedidos() {
 
 
 export function AtualizarDados(credenciais, novasCredenciais) {
-  const apiURL = "http://192.168.18.6:3000/usuarios";
+  const apiURL = "http://192.168.100.100:3000/usuarios";
 
   axios
     .get(apiURL)

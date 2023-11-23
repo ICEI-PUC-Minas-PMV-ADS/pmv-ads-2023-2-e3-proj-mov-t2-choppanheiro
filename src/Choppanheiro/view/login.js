@@ -38,6 +38,7 @@ export default function Login() {
       if (loginBemSucedido) {
         // Login falhou
         Alert.alert('Erro no Login', 'Verifique suas credenciais e tente novamente.');
+        return;
       } else {
 
         // Login bem-sucedido

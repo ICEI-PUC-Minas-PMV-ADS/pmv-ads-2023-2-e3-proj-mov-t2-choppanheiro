@@ -1,12 +1,4 @@
-import {
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  TextInput,
-  Keyboard,
-  View,
-  ScrollView,
-} from "react-native";
+import {StyleSheet, Text, TouchableOpacity, TextInput, Keyboard, View, ScrollView,} from "react-native";
 import { Avatar, Icon } from "react-native-elements";
 import { useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
@@ -52,7 +44,7 @@ export function Input({ holder, onChangeText }) {
   );
 }
 
-// Input Com mascara de segurança 
+// Input Com mascara de segurança
 export function InputSecure({ holder, onChangeText, secureTextEntry }) {
   return (
     <TextInput
@@ -83,7 +75,7 @@ export function Pedido({ onPress }) {
 
     Add(items);
   };
-  
+
   return (
     <View
       style={{
@@ -97,15 +89,14 @@ export function Pedido({ onPress }) {
       <View style={styles.container}>
         <Text style={styles.menuText}>ITEM</Text>
         <TextInput
-          holder="Item"
           style={styles.inputModal}
           valor={item}
           onChangeText={setItem}
           autoCapitalize="characters"
         />
-        <Text style={styles.menuText}>VALOR</Text>
+        <Text style={styles.menuText}> VALOR</Text>
         <TextInput
-          holder="R$:"
+          placeholder="R$:"
           style={styles.inputModal}
           valor={preco}
           onChangeText={setPreco}
@@ -252,10 +243,10 @@ export function Comanda({ onPress }) {
         </View>
         <View style={styles.containerTotal}>
         <Text style={{fontSize: 16, fontWeight:'bold'}}>TOTAL:                                         R$ {totalGeral.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</Text>
-        </View>         
+        </View>
       </ScrollView>
       <TouchableOpacity style={{marginBottom: 25}} onPress={onPress}>
-          <Icon 
+          <Icon
             name="check"
             type="material"
             color="white"
@@ -267,14 +258,135 @@ export function Comanda({ onPress }) {
               width: 50,
               height: 50,
               justifyContent: "center",
-              alignSelf: 'center',               
+              alignSelf: 'center',
             }}
           />
         </TouchableOpacity>
     </View>
   );
 }
+// Tela mesa
+export function NumeroPessoas({ onPress }){
+  return(
+    <View style={{
+      backgroundColor: "#F2F2F2",
+      width: "90%",
+      height: 200,
+      borderRadius: 20,
+      marginTop: 150,
+    }}>
+      <View style={{justifyContent: "center", alignItems: 'center' , margin: 10, marginTop: 40, }}>
+      <TextInput
+          placeholder={"NUMERO DE PESSOAS"}
+          valor={''}
+          onChangeText={''}
+          keyboardType="numeric"
+          style={[styles.inputModal, {width: '90%'}]}
+        />
+      </View>
+      
+      <TouchableOpacity onPress={onPress}>
+          <Icon
+            name="arrow-back"
+            type="material"
+            size={35}
+            rounded
+            containerStyle={{
+              borderWidth: 2,
+              borderColor: "#410404",
+              borderRadius: 100,
+              width: 50,
+              height: 50,
+              justifyContent: "center",
+              marginTop: 5,
+              alignSelf: 'center',
+            }}
+          />
+        </TouchableOpacity>
+    </View>
+  )
+}
 
+export function Gorjeta({ onPress }){
+  return(
+    <View style={{
+      backgroundColor: "#F2F2F2",
+      width: "90%",
+      height: 200,
+      borderRadius: 20,
+      marginTop: 150,
+    }}>
+      <View style={{justifyContent: "center", alignItems: 'center' , margin: 10, marginTop: 40, }}>
+      <TextInput
+          placeholder={"VALOR DA GORJETA"}
+          valor={''}
+          onChangeText={''}
+          keyboardType="numeric"
+          style={[styles.inputModal, {width: '90%'}]}
+        />
+      </View>
+      
+      <TouchableOpacity onPress={onPress}>
+          <Icon
+            name="arrow-back"
+            type="material"
+            size={35}
+            rounded
+            containerStyle={{
+              borderWidth: 2,
+              borderColor: "#410404",
+              borderRadius: 100,
+              width: 50,
+              height: 50,
+              justifyContent: "center",
+              marginTop: 5,
+              alignSelf: 'center',
+            }}
+          />
+        </TouchableOpacity>
+    </View>
+  )
+}
+export function Couver({ onPress }){
+  return(
+    <View style={{
+      backgroundColor: "#F2F2F2",
+      width: "90%",
+      height: 200,
+      borderRadius: 20,
+      marginTop: 150,
+    }}>
+      <View style={{justifyContent: "center", alignItems: 'center' , margin: 10, marginTop: 40, }}>
+      <TextInput
+          placeholder={"VALOR DE COUVER"}
+          valor={''}
+          onChangeText={''}
+          keyboardType="numeric"
+          style={[styles.inputModal, {width: '90%'}]}
+        />
+      </View>
+
+      <TouchableOpacity onPress={onPress}>
+          <Icon
+            name="arrow-back"
+            type="material"
+            size={35}
+            rounded
+            containerStyle={{
+              borderWidth: 2,
+              borderColor: "#410404",
+              borderRadius: 100,
+              width: 50,
+              height: 50,
+              justifyContent: "center",
+              marginTop: 5,
+              alignSelf: 'center',
+            }}
+          />
+        </TouchableOpacity>
+    </View>
+  )
+}
 
 
 

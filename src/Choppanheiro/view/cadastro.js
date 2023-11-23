@@ -26,6 +26,7 @@ export default function Cadastro() {
   
         if (cadastroBemSucedido) {
           Alert.alert('Erro no Cadastro', 'Verifique suas credenciais e tente novamente.');
+          return;//
         } else {
             Alert.alert('Cadastro concluído', 'Seu cadastro foi concluído com sucesso.', [
                 {
