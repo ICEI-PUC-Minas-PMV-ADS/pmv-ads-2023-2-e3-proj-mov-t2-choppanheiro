@@ -1,16 +1,15 @@
 
 # Projeto de Interface
 
-### Protótipo Interativo:
+Adotaremos uma metodologia ágil para garantir flexibilidade e capacidade de resposta às necessidades emergentes durante o desenvolvimento. Iterações regulares, testes de usabilidade e feedback contínuo dos usuários serão incorporados ao processo para aprimorar constantemente a qualidade da interface
 
-![Novo mural](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/9b8fbfbf-06a6-4c83-94af-88fed50c84dd)
 
 ## Diagrama de Fluxo
 
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/79721330/1249752c-9ec0-4528-924a-6513142a116f)
+![Novo mural](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/9b8fbfbf-06a6-4c83-94af-88fed50c84dd)
 
 
 ## Wireframes
