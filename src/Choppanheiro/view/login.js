@@ -1,17 +1,6 @@
 import { StatusBar } from "expo-status-bar";
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  TouchableWithoutFeedback, Alert
-} from "react-native";
-import {
-  Botao,
-  Input,
-  handlerTeclado,
-  TextoBotao, InputSecure
-} from "../components/components";
+import {StyleSheet, Text, View, Image, TouchableWithoutFeedback, Alert} from "react-native";
+import {Botao, Input, handlerTeclado, TextoBotao, InputSecure} from "../components/components";
 import { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 
@@ -31,23 +20,30 @@ export default function Login() {
       user,
       pass,
     };
-  
+
     try {
       const loginBemSucedido = await Logar(credenciais, navigation);
-  
+
       if (loginBemSucedido) {
         // Login falhou
         Alert.alert('Erro no Login', 'Verifique suas credenciais e tente novamente.');
         return;
       } else {
-
         // Login bem-sucedido
-        Alert.alert('Login bem-sucedido', 'Você entrou com sucesso!', [
-          {
-            text: 'OK',
-            onPress: () => navigation.navigate('Principal'), // Redirecionar para a tela "Principal"
-          },
-        ]);
+        Alert.alert(
+          'Login bem-sucedido',
+          'Você entrou com sucesso!',
+          [
+            {
+              text: 'OK',
+              onPress: () => {
+                // Redirecionar para a tela "Principal"
+                navigation.navigate('Principal');
+              },
+            },
+          ],
+          { cancelable: false } // Evitar que o usuário feche o alerta clicando fora
+        );
       }
     } catch (error) {
       console.error('Erro durante o login', error);

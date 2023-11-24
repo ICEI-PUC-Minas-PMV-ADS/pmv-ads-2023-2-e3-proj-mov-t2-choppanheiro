@@ -58,20 +58,27 @@ export function InputSecure({ holder, onChangeText, secureTextEntry }) {
 
 //Adiciona novo item
 export function Pedido({ onPress }) {
-  const [item, setItem] = useState();
-  const [preco, setPreco] = useState();
+  const [item, setItem] = useState("");
+  const [preco, setPreco] = useState("");
   const [qtd, setValor] = useState(0);
-    //Operação de Adição e Subtração
+
   const alterarValor = (operacao) => {
     setValor(operacao === "adicao" ? qtd + 1 : qtd - 1);
   };
 
   const handleConfirm = () => {
+    if (!item || !preco || qtd <= 0) {
+      alert("Por favor, preencha todos os campos antes de confirmar.");
+      return;
+    }
+
     const items = {
       item,
       preco,
       qtd,
     };
+
+    onPress(items);
 
     Add(items);
   };
@@ -90,7 +97,7 @@ export function Pedido({ onPress }) {
         <Text style={styles.menuText}>ITEM</Text>
         <TextInput
           style={styles.inputModal}
-          valor={item}
+          value={item}
           onChangeText={setItem}
           autoCapitalize="characters"
         />
@@ -98,7 +105,7 @@ export function Pedido({ onPress }) {
         <TextInput
           placeholder="R$:"
           style={styles.inputModal}
-          valor={preco}
+          value={preco}
           onChangeText={setPreco}
           keyboardType="numeric"
         />
@@ -121,6 +128,7 @@ export function Pedido({ onPress }) {
             >
               <Text style={styles.menuText}>+</Text>
             </TouchableOpacity>
+
             <TouchableOpacity
               style={styles.botaoDois}
               onPress={() => alterarValor("subtracao")}
@@ -129,28 +137,25 @@ export function Pedido({ onPress }) {
             </TouchableOpacity>
           </View>
         </View>
-        <Botao texto={"CONFIRMAR"} onPress={handleConfirm} />
-        <TouchableOpacity onPress={onPress}>
-          <Icon
-            name="arrow-back"
-            type="material"
-            size={35}
-            rounded
-            containerStyle={{
-              borderWidth: 2,
-              borderColor: "#410404",
-              borderRadius: 100,
-              width: 50,
-              height: 50,
-              justifyContent: "center",
-              marginTop: 35,
+        <TouchableOpacity onPress={handleConfirm}>
+          <View
+            style={{
+              backgroundColor: "#F2A60C",
+              borderRadius: 10,
+              paddingVertical: 10,
+              paddingHorizontal: 20,
+              alignSelf: "center",
+              marginTop: 10,
             }}
-          />
+          >
+            <Text style={{ color: "white" }}>Confirmar</Text>
+          </View>
         </TouchableOpacity>
       </View>
     </View>
   );
 }
+
 export function Comanda({ onPress }) {
   const [dadosPedidos, setDadosPedidos] = useState([]);
   const [totalGeral, setTotalGeral] = useState(0);
@@ -265,9 +270,11 @@ export function Comanda({ onPress }) {
     </View>
   );
 }
-// Tela mesa
-export function NumeroPessoas({ onPress }){
-  return(
+//Tela Mesa
+export function NumeroPessoas({ onPress }) {
+  const [numeroPessoas, setNumeroPessoas] = useState('');
+
+  return (
     <View style={{
       backgroundColor: "#F2F2F2",
       width: "90%",
@@ -275,40 +282,35 @@ export function NumeroPessoas({ onPress }){
       borderRadius: 20,
       marginTop: 150,
     }}>
-      <View style={{justifyContent: "center", alignItems: 'center' , margin: 10, marginTop: 40, }}>
-      <TextInput
+      <View style={{ justifyContent: "center", alignItems: 'center', margin: 10, marginTop: 40 }}>
+        <TextInput
           placeholder={"NUMERO DE PESSOAS"}
-          valor={''}
-          onChangeText={''}
+          value={numeroPessoas}
+          onChangeText={(text) => setNumeroPessoas(text)}
           keyboardType="numeric"
-          style={[styles.inputModal, {width: '90%'}]}
+          style={[styles.inputModal, { width: '90%' }]}
         />
       </View>
-      
-      <TouchableOpacity onPress={onPress}>
-          <Icon
-            name="arrow-back"
-            type="material"
-            size={35}
-            rounded
-            containerStyle={{
-              borderWidth: 2,
-              borderColor: "#410404",
-              borderRadius: 100,
-              width: 50,
-              height: 50,
-              justifyContent: "center",
-              marginTop: 5,
-              alignSelf: 'center',
-            }}
-          />
-        </TouchableOpacity>
+      <TouchableOpacity onPress={() => onPress(numeroPessoas)}>
+        <View style={{
+          backgroundColor: "#F2A60C",
+          borderRadius: 10,
+          paddingVertical: 10,
+          paddingHorizontal: 20,
+          alignSelf: 'center',
+          marginTop: 10,
+        }}>
+          <Text style={{ color: 'white' }}>Confirmar</Text>
+        </View>
+      </TouchableOpacity>
     </View>
-  )
+  );
 }
 
-export function Gorjeta({ onPress }){
-  return(
+export function Gorjeta({ onPress }) {
+  const [valorGorjeta, setValorGorjeta] = useState('');
+
+  return (
     <View style={{
       backgroundColor: "#F2F2F2",
       width: "90%",
@@ -316,39 +318,35 @@ export function Gorjeta({ onPress }){
       borderRadius: 20,
       marginTop: 150,
     }}>
-      <View style={{justifyContent: "center", alignItems: 'center' , margin: 10, marginTop: 40, }}>
-      <TextInput
+      <View style={{ justifyContent: "center", alignItems: 'center', margin: 10, marginTop: 40 }}>
+        <TextInput
           placeholder={"VALOR DA GORJETA"}
-          valor={''}
-          onChangeText={''}
+          value={valorGorjeta}
+          onChangeText={(text) => setValorGorjeta(text)}
           keyboardType="numeric"
-          style={[styles.inputModal, {width: '90%'}]}
+          style={[styles.inputModal, { width: '90%' }]}
         />
       </View>
-      
-      <TouchableOpacity onPress={onPress}>
-          <Icon
-            name="arrow-back"
-            type="material"
-            size={35}
-            rounded
-            containerStyle={{
-              borderWidth: 2,
-              borderColor: "#410404",
-              borderRadius: 100,
-              width: 50,
-              height: 50,
-              justifyContent: "center",
-              marginTop: 5,
-              alignSelf: 'center',
-            }}
-          />
-        </TouchableOpacity>
+      <TouchableOpacity onPress={() => onPress(valorGorjeta)}>
+        <View style={{
+          backgroundColor: "#F2A60C",
+          borderRadius: 10,
+          paddingVertical: 10,
+          paddingHorizontal: 20,
+          alignSelf: 'center',
+          marginTop: 10,
+        }}>
+          <Text style={{ color: 'white' }}>Confirmar</Text>
+        </View>
+      </TouchableOpacity>
     </View>
-  )
+  );
 }
-export function Couver({ onPress }){
-  return(
+
+export function Couver({ onPress }) {
+  const [valorCouver, setValorCouver] = useState('');
+
+  return (
     <View style={{
       backgroundColor: "#F2F2F2",
       width: "90%",
@@ -356,39 +354,30 @@ export function Couver({ onPress }){
       borderRadius: 20,
       marginTop: 150,
     }}>
-      <View style={{justifyContent: "center", alignItems: 'center' , margin: 10, marginTop: 40, }}>
-      <TextInput
+      <View style={{ justifyContent: "center", alignItems: 'center', margin: 10, marginTop: 40 }}>
+        <TextInput
           placeholder={"VALOR DE COUVER"}
-          valor={''}
-          onChangeText={''}
+          value={valorCouver}
+          onChangeText={(text) => setValorCouver(text)}
           keyboardType="numeric"
-          style={[styles.inputModal, {width: '90%'}]}
+          style={[styles.inputModal, { width: '90%' }]}
         />
       </View>
-
-      <TouchableOpacity onPress={onPress}>
-          <Icon
-            name="arrow-back"
-            type="material"
-            size={35}
-            rounded
-            containerStyle={{
-              borderWidth: 2,
-              borderColor: "#410404",
-              borderRadius: 100,
-              width: 50,
-              height: 50,
-              justifyContent: "center",
-              marginTop: 5,
-              alignSelf: 'center',
-            }}
-          />
-        </TouchableOpacity>
+      <TouchableOpacity onPress={() => onPress(valorCouver)}>
+        <View style={{
+          backgroundColor: "#F2A60C",
+          borderRadius: 10,
+          paddingVertical: 10,
+          paddingHorizontal: 20,
+          alignSelf: 'center',
+          marginTop: 10,
+        }}>
+          <Text style={{ color: 'white' }}>Confirmar</Text>
+        </View>
+      </TouchableOpacity>
     </View>
-  )
+  );
 }
-
-
 
 // Modal de inserçao
 export function Modal({ onChangeText, texto, style, holder }) {

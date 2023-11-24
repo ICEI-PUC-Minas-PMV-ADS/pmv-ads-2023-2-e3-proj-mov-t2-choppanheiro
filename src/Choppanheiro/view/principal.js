@@ -20,7 +20,7 @@ export default function Principal() {
         <Botao
           texto={"ABRIR MESA"}
           onPress={tMesa}
-          style={{ width: 229, marginTop: "30%" }} /*onPress={tCadastro}*/
+          style={{ width: 229, marginTop: "30%" }}
         />
       </View>
 

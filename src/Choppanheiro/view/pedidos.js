@@ -10,7 +10,7 @@ export default function Item() {
   const toggleModal = () => {
     setModalVisible(!modalVisible);
   };
-  
+
   const [modalComanda, setModalComanda] = useState(false);
   const toggleComanda = () => {
     setModalComanda(!modalComanda);
@@ -29,13 +29,16 @@ export default function Item() {
           <Pedido onPress={toggleModal} />
         </View>
       </Modal>
-      <Botao style={styles.botao} texto={'FECHAR CONTA'} onPress={fecharConta} />
+
       <BotaoComanda style={styles.botaoComanda} texto={'COMANDA'} onPress={toggleComanda} />
       <Modal visible={modalComanda} transparent={true} animationType='slide'>
         <View style={styles.containerModal}>
           <Comanda onPress={toggleComanda} />
         </View>
       </Modal>
+
+      <Botao style={styles.botao} texto={'FECHAR CONTA'} onPress={fecharConta} />
+
     </View>
   );
 }
