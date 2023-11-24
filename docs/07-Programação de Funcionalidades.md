@@ -14,8 +14,6 @@ O aplicativo deve possibilitar o cadastro de usuários.
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/112138736/c4111416-76ab-4d63-b756-d8c53da4c7fe)
 
-
-
 ## 2. Login (RF-02)
 
 O aplicativo deve permitir o login na conta cadastrada mediante usuário e senha.
@@ -68,12 +66,11 @@ O aplicativo deve ser capaz de realizar a divisão da conta de duas formas: igua
 
 |ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
 |------|-----------------------------------------|----|
-|RF-006|O aplicativo deve ser capaz de realizar a divisão da conta de duas formas: igualmente entre todos os membros do grupo ou individualmente.| Divisao Comanda | 
+|RF-006|O aplicativo deve ser capaz de realizar a divisão da conta de duas formas: igualmente entre todos os membros do grupo (Galera) ou individualmente (Faz a boa).| Divisao Comanda | 
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/112138736/dd70681e-3da0-4754-9920-086bb4b25070)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/112138736/a5f53289-7891-45e9-85fb-81bbde1c2dea)
 
-
-##7. **Gorjeta (RF-09)**
+##7. **Gorjeta (RF-07)**
 
 O aplicativo deve permitir que os usuários possam adicionar uma quantia para gorjeta ou couvert à conta. Essa quantia será incluída na divisão final da conta.
 
@@ -84,7 +81,7 @@ O aplicativo deve permitir que os usuários possam adicionar uma quantia para go
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/112138736/a5f53289-7891-45e9-85fb-81bbde1c2dea)
 
 
-##8. **Historico (RF-12)**
+##8. **Historico (RF-08)**
 
 O aplicativo deve permitir que os usuários acessem um histórico de encontros anteriores, fornecendo uma visão geral dos locais visitados e como os custos foram divididos em cada evento, permitindo aos usuários um melhor controle financeiro e uma revisão dos itens consumidos nos locais frequentados.
 
@@ -98,7 +95,7 @@ O aplicativo deve permitir que os usuários acessem um histórico de encontros a
 
 
 
-##9. **Criar Mesa (RF-14)**
+##9. **Criar Mesa (RF-09)**
 
 O aplicativo deve permitir que os usuários criem uma mesa, incluir usuários nela e encerrar a conta.
 
