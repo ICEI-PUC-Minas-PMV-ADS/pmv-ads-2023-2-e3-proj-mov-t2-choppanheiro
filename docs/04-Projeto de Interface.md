@@ -3,10 +3,7 @@
 
 ### Protótipo Interativo:
 
-[Clique aqui](https://www.figma.com/proto/PIrNxs1qlewQEYqivHL5lq/Choppanheiros---wireframes?page-id=43%3A443&type=design&node-id=43-447&viewport=594%2C438%2C0.06&t=U4A6VRxVvZNFfs9l-1&scaling=min-zoom&starting-point-node-id=43%3A444&show-proto-sidebar=1&mode=design)
-
-
-
+![Novo mural](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/9b8fbfbf-06a6-4c83-94af-88fed50c84dd)
 
 ## Diagrama de Fluxo
 
