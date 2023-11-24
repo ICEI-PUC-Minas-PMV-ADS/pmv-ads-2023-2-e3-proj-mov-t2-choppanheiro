@@ -1,14 +1,14 @@
 # Introdução
 
-Esta documentação de contexto de trabalho visa fornecer uma visão abrangente sobre o processo de divisão de contas de bar entre amigos. Esse processo é comum em situações sociais em que um grupo de amigos compartilha despesas relacionadas a alimentos e bebidas em estabelecimentos como bares e restaurantes. A documentação abordará os diversos aspectos envolvidos nesse processo, incluindo. 
+Esta documentação de contexto de trabalho visa fornecer uma visão abrangente sobre o processo de divisão de contas de bar entre amigos. Esse processo é comum em situações sociais em que um grupo de amigos compartilha despesas relacionadas a alimentos e bebidas em estabelecimentos como bares e restaurantes.
 
 ## Problema
 
-O problema que se busca resolver com esse projeto é melhorar a forma de realizar a divisão da conta entre amigos. Tal divisão pode ser um desafio, especialmente quando há diferentes pedidos, quantidades e preços envolvidos. A divisão justa e transparente das despesas é essencial para evitar conflitos e manter as relações harmoniosas
+O problema que se busca resolver com esse projeto é melhorar a forma de realizar a divisão da conta. Tal divisão pode ser um desafio, especialmente quando há diferentes pedidos, quantidades e preços envolvidos. A divisão justa e transparente das despesas é essencial para evitar conflitos e manter as relações harmoniosas
 
 ## Objetivos
 
-Dividir a conta de bar entre amigos é uma atividade social rotineira que envolve calcular e distribuir equitativamente as despesas incorridas durante um encontro. Os grupos de amigos frequentemente se reúnem para compartilhar refeições, bebidas e experiências. No entanto, a tarefa de dividir a conta de maneira justa pode ser complicada devido a fatores como pedidos individuais variados, taxas de serviço e preferências de pagamento.
+Desenvolver uma solução tecnológica intuitiva e eficiente que simplifique o processo de divisão de contas em bares entre amigos, garantindo uma distribuição justa e transparente das despesas. A solução deve ser acessível a partir de dispositivos móveis e permitir que os usuários ingressem facilmente os itens consumidos, suas quantidades e valores, automatizando o cálculo da divisão equitativa da conta.
 
 
 ## Justificativa
