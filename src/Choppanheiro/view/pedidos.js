@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, Modal } from 'react-native';
+import { StyleSheet, Text, View, Image, Modal, TouchableWithoutFeedback } from 'react-native';
 import { Botao, Pedido, BotaoComanda, Comanda } from '../components/components';
 import { useNavigation } from '@react-navigation/native';
 import { useState } from 'react';
 
 export default function Item() {
   const navigation = useNavigation();
+
+  const [listaItens, setListaItens] = useState([]);
+
+
   const [modalVisible, setModalVisible] = useState(false);
   const toggleModal = () => {
     setModalVisible(!modalVisible);
@@ -17,28 +21,35 @@ export default function Item() {
   };
 
   const fecharConta = () => {
-    navigation.navigate('Mesa');
+    navigation.navigate('Mesa', { listaItens });
   };
 
   return (
     <View style={styles.container}>
       <Image style={styles.img} source={require('../assets/Vector.png')} />
-      <Botao texto={'ADICIONAR ITEM'} onPress={toggleModal} />
+      <Botao style={{ width: 230 }} texto={'ADICIONAR ITEM'} onPress={toggleModal} />
       <Modal transparent={true} animationType='slide' visible={modalVisible}>
-        <View style={styles.containerModal}>
-          <Pedido onPress={toggleModal} />
-        </View>
+        <TouchableWithoutFeedback onPress={toggleModal}>
+          <View style={styles.containerModal}>
+            <Pedido setListaItens={setListaItens} onPress={toggleModal} />
+          </View>
+        </TouchableWithoutFeedback>
       </Modal>
 
-      <BotaoComanda style={styles.botaoComanda} texto={'COMANDA'} onPress={toggleComanda} />
+      <Botao style={{ width: 230 }} texto={'COMANDA'} onPress={toggleComanda} />
       <Modal visible={modalComanda} transparent={true} animationType='slide'>
-        <View style={styles.containerModal}>
-          <Comanda onPress={toggleComanda} />
-        </View>
+        <TouchableWithoutFeedback onPress={toggleComanda}>
+          <View style={styles.containerModal}>
+            <Comanda onPress={toggleComanda} />
+          </View>
+        </TouchableWithoutFeedback>
       </Modal>
 
-      <Botao style={styles.botao} texto={'FECHAR CONTA'} onPress={fecharConta} />
-
+      <Botao
+        style={{ width: 230 }}
+        texto={'FECHAR CONTA'}
+        onPress={() => { fecharConta() }}
+      />
     </View>
   );
 }
@@ -50,13 +61,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  botao:{
-    width:210,
+  botao: {
+    width: 210,
     marginTop: 20,
     justifyContent: 'center',
   },
-  botaoComanda:{
-    width:210,
+  botaoComanda: {
+    width: 210,
     marginTop: 20,
     justifyContent: 'center',
   },
@@ -66,7 +77,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     marginBottom: 0
   },
-  containerModal:{
+  containerModal: {
     margin: 15,
     flex: 1,
     alignItems: 'center',
