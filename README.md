@@ -33,7 +33,15 @@ Mateus Curcino de Lima
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Para acessa a aplicação basta utilizar um dos usuarios abaixo para teste
+
+ Usuários para teste de acesso
+
+|USUÁRIOS      | LOGIN | SENHA |
+|--------------|-------|-------|
+|Administrador | admin | 123   |
+|Teste         | teste | 123   |
+
 
 # Documentação
 
