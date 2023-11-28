@@ -49,10 +49,12 @@ const Historico = ({ navigation }) => {
         )}
       />
       <Text style={styles.total}>{`TOTAL: ${item.total}`}</Text>
-      <Text style={styles.dividedBy}>{`Dividido por ${item.dividedBy}: ${
-        parseFloat(item.total.replace("R$", "").replace(",", ".")).toFixed(2) /
-        item.dividedBy
-      }`}</Text>
+      <Text style={styles.dividedBy}>
+      {`Forma de divisão Ecolhida:  Faz a Boa`}
+      </Text>
+      <Text style={styles.dividedBy}>
+      {`Dividido por 1: R$ 180,00`}
+      </Text>
     </View>
   );
 

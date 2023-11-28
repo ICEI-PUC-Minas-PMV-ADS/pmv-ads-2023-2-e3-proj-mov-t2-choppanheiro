@@ -16,6 +16,8 @@ export default function Galera( ) {
         { item: 'Chiclete', preco: 10 },
         { item: 'Petisco', preco: 40 },
         { item: 'Coquetel', preco: 70 },
+        { item: 'COUVERT', preco: 10 },
+        { item: 'GORJETA', preco: 20 },
       ];
 
 
@@ -45,8 +47,8 @@ export default function Galera( ) {
                     <View>
                         <View style={{ backgroundColor: '#969696', height: 5, margin: 5 }}></View>
                         <View style={{ padding: 5, alignItems: 'center'}}>
-                            <Text style={{ fontSize: 26, fontWeight: 'bold', marginBottom: 5, marginTop: 5 }}>TOTAL: R$:150,00</Text>
-                            <Text style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 5, marginTop: 5 }}>Total divido por 4: R$:37,5</Text>
+                            <Text style={{ fontSize: 26, fontWeight: 'bold', marginBottom: 5, marginTop: 5 }}>TOTAL: R$: 180,00</Text>
+                            <Text style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 5, marginTop: 5 }}>Total divido por 4: R$: 45,00</Text>
                         </View>
                     
                     </View>
