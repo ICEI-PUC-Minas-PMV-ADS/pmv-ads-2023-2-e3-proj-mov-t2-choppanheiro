@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, StyleSheet, FlatList } from "react-native";
+import { View, Text, StyleSheet, FlatList, Alert } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Botao, Input, handlerTeclado, Profile } from "../components/components";
 import { listaItem } from "../controller/controller";
@@ -8,14 +8,15 @@ export default function Galera( ) {
     const navigation = useNavigation();
 
     const tPedido = () => {
-        navigation.navigate('Pedido')
+        Alert.alert('Ta pago!', 'Se beber não dirija');
+        navigation.navigate('Principal')
     }
 
     const itensBar = [
-        { item: 'Cerveja', preco: 30 },
-        { item: 'Chiclete', preco: 10 },
-        { item: 'Petisco', preco: 40 },
-        { item: 'Coquetel', preco: 70 },
+        { item: '1x Cerveja', preco: 30 },
+        { item: '1x Chiclete', preco: 10 },
+        { item: '1x Petisco', preco: 40 },
+        { item: '1x Coquetel', preco: 70 },
         { item: 'COUVERT', preco: 10 },
         { item: 'GORJETA', preco: 20 },
       ];
@@ -50,12 +51,11 @@ export default function Galera( ) {
                             <Text style={{ fontSize: 26, fontWeight: 'bold', marginBottom: 5, marginTop: 5 }}>TOTAL: R$: 180,00</Text>
                             <Text style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 5, marginTop: 5 }}>Total divido por 4: R$: 45,00</Text>
                         </View>
-                    
                     </View>
                 </View>
             </View>
-        
-            <Botao texto={'VOLTAR'} onPress={tPedido}></Botao>
+            <Botao texto={'PARA GALERA'} onPress={tPedido}></Botao>
+
         </View>
     );
 }

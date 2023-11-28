@@ -69,6 +69,8 @@ export function Pedido({ onPress, setListaItens }) {
       preco,
       qtd,
     }
+
+    onPress()
   
     listaItem(items, setListaItens);
     setContador((prevContador) => prevContador + 1)
@@ -90,7 +92,7 @@ export function Pedido({ onPress, setListaItens }) {
           />
           <Text style={styles.menuText}>VALOR</Text>
           <TextInput
-            placeholder="R$: 00,00"
+            placeholder="R$: 0,00"
             style={styles.inputModal}
             value={preco}
             onChangeText={setPreco}

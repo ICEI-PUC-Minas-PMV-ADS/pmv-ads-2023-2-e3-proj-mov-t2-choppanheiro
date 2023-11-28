@@ -13,10 +13,10 @@ export default function Fazboa( ) {
     }
 
     const itensBar = [
-        { item: 'Cerveja', preco: 30 },
-        { item: 'Chiclete', preco: 10 },
-        { item: 'Petisco', preco: 40 },
-        { item: 'Coquetel', preco: 70 },
+        { item: '1x Cerveja', preco: 30 },
+        { item: '1x Chiclete', preco: 10 },
+        { item: '1x Petisco', preco: 40 },
+        { item: '1x Coquetel', preco: 70 },
         { item: 'COUVERT', preco: 10 },
         { item: 'GORJETA', preco: 20 },
       ];
@@ -49,12 +49,11 @@ export default function Fazboa( ) {
                         <View style={{ backgroundColor: '#969696', height: 5, margin: 5 }}></View>
                         <View style={{ padding: 5, alignItems: 'center'}}>
                             <Text style={{ fontSize: 26, fontWeight: 'bold', marginBottom: 5, marginTop: 5 }}>TOTAL: R$:180,00</Text>
+                            <Text style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 5, marginTop: 5 }}>Ah!!! Fez a boa para a galera!! 🤜🏻🤛🏻 </Text>
                         </View>
-                    
                     </View>
                 </View>
             </View>
-        
             <Botao texto={'FAZ A BOA'} onPress={tPedido}></Botao>
         </View>
     );

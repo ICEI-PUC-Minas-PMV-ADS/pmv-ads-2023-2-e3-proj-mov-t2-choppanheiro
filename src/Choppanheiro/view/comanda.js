@@ -14,10 +14,10 @@ export default function Comanda( ) {
     }
 
     const itensBar = [
-        { item: 'Cerveja', preco: 30 },
-        { item: 'Chiclete', preco: 10 },
-        { item: 'Petisco', preco: 40 },
-        { item: 'Coquetel', preco: 70 },
+        { item: '1x Cerveja', preco: 30 },
+        { item: '1x Chiclete', preco: 10 },
+        { item: '1x Petisco', preco: 40 },
+        { item: '1x Coquetel', preco: 70 },
       ];
 
 
