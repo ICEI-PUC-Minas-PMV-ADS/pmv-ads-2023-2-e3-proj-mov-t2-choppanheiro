@@ -4,10 +4,11 @@ import { Botao, Pedido, BotaoComanda, Comanda } from '../components/components';
 import { useNavigation } from '@react-navigation/native';
 import { useState } from 'react';
 
-export default function Item() {
+export default function Item({route}) {
   const navigation = useNavigation();
 
   const [listaItens, setListaItens] = useState([]);
+
 
 
   const [modalVisible, setModalVisible] = useState(false);
@@ -15,14 +16,13 @@ export default function Item() {
     setModalVisible(!modalVisible);
   };
 
-  const [modalComanda, setModalComanda] = useState(false);
-  const toggleComanda = () => {
-    setModalComanda(!modalComanda);
-  };
-
   const fecharConta = () => {
     navigation.navigate('Mesa', { listaItens });
   };
+
+  const tComanda = () => {
+    navigation.navigate('Comanda', {listaItens});
+  }
 
   return (
     <View style={styles.container}>
@@ -36,14 +36,8 @@ export default function Item() {
         </TouchableWithoutFeedback>
       </Modal>
 
-      <Botao style={{ width: 230 }} texto={'COMANDA'} onPress={toggleComanda} />
-      <Modal visible={modalComanda} transparent={true} animationType='slide'>
-        <TouchableWithoutFeedback onPress={toggleComanda}>
-          <View style={styles.containerModal}>
-            <Comanda onPress={toggleComanda} />
-          </View>
-        </TouchableWithoutFeedback>
-      </Modal>
+      <Botao style={{ width: 230 }} texto={'COMANDA'} onPress={tComanda} />
+      
 
       <Botao
         style={{ width: 230 }}

@@ -4,8 +4,10 @@ import { useNavigation } from "@react-navigation/native";
 import { Botao, Input, handlerTeclado, Profile } from "../components/components";
 import { listaItem } from "../controller/controller";
 
-export default function Galera( ) {
+export default function Comanda( ) {
     const navigation = useNavigation();
+
+
 
     const tPedido = () => {
         navigation.navigate('Pedido')
@@ -28,8 +30,7 @@ export default function Galera( ) {
     return (
         <View style={styles.container}>
             <View style={{ padding: 20 }}>
-                <Text style={styles.title}>Galera</Text>
-                <Text style={{fontSize:18,marginBottom:20}}>Divida com seus amigos</Text>
+                <Text style={styles.title}>Seu consumo</Text>
                 <View style={{ backgroundColor: '#d6d6d6', borderRadius: 5, borderColor: '#969696', borderWidth: 1, height: '80%' }}>
                     <View>
                         <View style={{ padding: 5, alignItems: "center" }}>
@@ -46,7 +47,6 @@ export default function Galera( ) {
                         <View style={{ backgroundColor: '#969696', height: 5, margin: 5 }}></View>
                         <View style={{ padding: 5, alignItems: 'center'}}>
                             <Text style={{ fontSize: 26, fontWeight: 'bold', marginBottom: 5, marginTop: 5 }}>TOTAL: R$:150,00</Text>
-                            <Text style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 5, marginTop: 5 }}>Total divido por 4: R$:37,5</Text>
                         </View>
                     
                     </View>
@@ -61,13 +61,14 @@ export default function Galera( ) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#FFF",
+        backgroundColor: '#FFFF',
     },
     title: {
         fontSize: 36,
         fontWeight: "bold",
         color: "#410404",
         alignSelf: "flex-start",
+        marginVertical: 20,
     },
     historicoItem: {
         borderWidth: 1,

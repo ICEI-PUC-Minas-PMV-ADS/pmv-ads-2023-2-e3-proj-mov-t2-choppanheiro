@@ -51,9 +51,10 @@ export function Cadastrar(credenciais) {
 }
 
 
-export function listaItem(items, setListaItens) {
+export function listaItem(items, setListaItens, contador) {
  
   const novoItem = {
+    id: contador,
     item: items.item,
     preco: items.preco,
     qtd: items.qtd 

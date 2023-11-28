@@ -12,15 +12,16 @@ import Mesa from "./view/mesa";
 import MinhaConta from "./view/account";
 import Pedido from "./view/pedidos";
 import Historico from "./view/historico";
-import Fazaboa from "./view/fazaboa";
 import Galera from "./view/galera";
+import Comanda from "./view/comanda";
+import Fazboa from "./view/fazboa";
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Principal">
+      <Stack.Navigator initialRouteName="Comanda">
         <Stack.Screen
           name="Home"
           component={Home}
@@ -56,6 +57,13 @@ export default function App() {
             header: () => null,
           }}
         />
+        <Stack.Screen
+          name="Fazboa"
+          component={Fazboa}
+          options={{
+            header: () => null,
+          }}
+        />
         
         <Stack.Screen
           name="Principal"
@@ -73,13 +81,13 @@ export default function App() {
           options={{ header: () => null }}
         />
         <Stack.Screen
-          name="Historico"
-          component={Historico}
+          name="Comanda"
+          component={Comanda}
           options={{ header: () => null }}
         />
         <Stack.Screen
-          name="Fazaboa"
-          component={Fazaboa}
+          name="Historico"
+          component={Historico}
           options={{ header: () => null }}
         />
         <Stack.Screen

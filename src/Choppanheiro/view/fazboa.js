@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, StyleSheet, FlatList } from "react-native";
+import { View, Text, StyleSheet, FlatList, Alert } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Botao, Input, handlerTeclado, Profile } from "../components/components";
 import { listaItem } from "../controller/controller";
 
-export default function Galera( ) {
+export default function Fazboa( ) {
     const navigation = useNavigation();
 
     const tPedido = () => {
-        navigation.navigate('Pedido')
+        Alert.alert('Ta pago!', 'Se beber não dirija');
+        navigation.navigate('Principal')
     }
 
     const itensBar = [
@@ -16,6 +17,8 @@ export default function Galera( ) {
         { item: 'Chiclete', preco: 10 },
         { item: 'Petisco', preco: 40 },
         { item: 'Coquetel', preco: 70 },
+        { item: 'COUVERT', preco: 10 },
+        { item: 'GORJETA', preco: 20 },
       ];
 
 
@@ -28,8 +31,8 @@ export default function Galera( ) {
     return (
         <View style={styles.container}>
             <View style={{ padding: 20 }}>
-                <Text style={styles.title}>Galera</Text>
-                <Text style={{fontSize:18,marginBottom:20}}>Divida com seus amigos</Text>
+                <Text style={styles.title}>Faz a boa!</Text>
+                <Text style={{fontSize:18,marginBottom:20}}>Faça a boa para seus amigos</Text>
                 <View style={{ backgroundColor: '#d6d6d6', borderRadius: 5, borderColor: '#969696', borderWidth: 1, height: '80%' }}>
                     <View>
                         <View style={{ padding: 5, alignItems: "center" }}>
@@ -45,15 +48,14 @@ export default function Galera( ) {
                     <View>
                         <View style={{ backgroundColor: '#969696', height: 5, margin: 5 }}></View>
                         <View style={{ padding: 5, alignItems: 'center'}}>
-                            <Text style={{ fontSize: 26, fontWeight: 'bold', marginBottom: 5, marginTop: 5 }}>TOTAL: R$:150,00</Text>
-                            <Text style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 5, marginTop: 5 }}>Total divido por 4: R$:37,5</Text>
+                            <Text style={{ fontSize: 26, fontWeight: 'bold', marginBottom: 5, marginTop: 5 }}>TOTAL: R$:180,00</Text>
                         </View>
                     
                     </View>
                 </View>
             </View>
         
-            <Botao texto={'VOLTAR'} onPress={tPedido}></Botao>
+            <Botao texto={'FAZ A BOA'} onPress={tPedido}></Botao>
         </View>
     );
 }
@@ -61,7 +63,7 @@ export default function Galera( ) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#FFF",
+        backgroundColor: '#FFFF',
     },
     title: {
         fontSize: 36,

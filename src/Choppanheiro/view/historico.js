@@ -18,12 +18,16 @@ const Historico = ({ navigation }) => {
     const dummyData = [
       {
         id: "1",
-        establishment: "O Redentor",
-        date: "07/08/23",
-        total: "R$52,80",
+        establishment: "Ultimo Pedido",
+        date: "28/11/23",
+        total: "R$180,00",
         items: [
-          { name: "Batata Frita", price: "R$24,00" },
-          { name: "Cerveja", price: "R$18,00" },
+          { name: "Cerveja", price: "R$30,00" },
+          { name: "Chiclete", price: "R$10,00" },
+          { name: "Petisco", price: "R$40,00" },
+          { name: "Coquetel", price: "R$70,00" },
+          { name: "COUVERT", price: "R$10,00" },
+          { name: "GORJETA", price: "R$20,00" }
           // Add other items similarly
         ],
         dividedBy: 4,

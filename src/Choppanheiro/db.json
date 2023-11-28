@@ -151,6 +151,22 @@
       ],
       "dataFormatada": "2023-11-25",
       "id": 9
+    },
+    {
+      "pessoas": "2",
+      "gorjeta": 0,
+      "couver": 0,
+      "listaItens": [],
+      "dataFormatada": "2023-11-28",
+      "id": 10
+    },
+    {
+      "pessoas": "4",
+      "gorjeta": 0,
+      "couver": 0,
+      "listaItens": [],
+      "dataFormatada": "2023-11-28",
+      "id": 11
     }
   ],
   "usuarios": [

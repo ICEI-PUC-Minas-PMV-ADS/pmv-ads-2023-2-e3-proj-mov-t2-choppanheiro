@@ -55,7 +55,7 @@ export function Pedido({ onPress, setListaItens }) {
   const [item, setItem] = useState('');
   const [preco, setPreco] = useState('');
   const [qtd, setQtd] = useState(1);
-
+  const [contador, setContador] = useState(1)
 
 
   const handleConfirm = () => {
@@ -71,6 +71,7 @@ export function Pedido({ onPress, setListaItens }) {
     }
   
     listaItem(items, setListaItens);
+    setContador((prevContador) => prevContador + 1)
     setItem('');
     setPreco('');
     setQtd(1);
@@ -285,6 +286,8 @@ export function ModalInput ({ visible, onClose, onConfirm, title, placeholder })
 export function Profile({ width, bgColor }) {
   const [menuVisible, setMenuVisible] = useState(false);
   const navigation = useNavigation();
+
+
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);

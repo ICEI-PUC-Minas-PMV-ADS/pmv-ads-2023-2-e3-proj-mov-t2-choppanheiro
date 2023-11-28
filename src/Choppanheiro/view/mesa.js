@@ -54,6 +54,10 @@ export default function Mesa({route}) {
     fecharModais();
   };
 
+  const handleFaz = () => {
+    navigation.navigate('Fazboa')
+  }
+
   const handleGalera = async () => {
     try {
      const dataAtual = new Date();
@@ -113,7 +117,7 @@ export default function Mesa({route}) {
           </View>
 
           <View style={styles.rowContainer}>
-            <Botao texto={'FAZ A BOA'} style={{ width: '82%' }}  />
+            <Botao texto={'FAZ A BOA'} style={{ width: '82%' }} onPress={handleFaz} />
           </View>
         </View>
 
