@@ -71,11 +71,10 @@ Os resultados obtidos nos testes foram registrados em tabelas, conforme abaixo:
 **CT-08 - Visualização de histórico de divisões. **
 | **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- 	| --- | ---  | --- | --- | --- |
-| Usuário 1	| 27 anos| CT 08| 00:00:00 | - | - | - | --- |
-| Usuário 2 | 46 anos| CT 08| 00:00:00 | - | - | - | --- |
-| Usuário 3	| 21 anos| CT 08| 00:00:00 | - | - | - | --- |
-| Usuário 4	| 26 anos| CT 08| 00:00:00 | - | - | - | --- |
-| Usuário 5	| 37 anos| CT 08| 00:00:00 | - | - | - | --- |
+| Usuário 1	| 27 anos| CT 08| 00:00:06 | 2 | - | - | --- |
+| Usuário 3	| 21 anos| CT 08| 00:00:08 | 2 | - | - | --- |
+| Usuário 4	| 26 anos| CT 08| 00:00:08 | 2 | - | - | --- |
+| Usuário 5	| 37 anos| CT 08| 00:00:10 | 2 | - | - | --- |
 
 **CT-09 - Criação de uma Mesa **
 | **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
