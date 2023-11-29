@@ -44,16 +44,16 @@ Os resultados obtidos nos testes foram registrados em tabelas, conforme abaixo:
 **CT-05 - Visualizar os gastos quando a mesa for encerrada. **
 | **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- 	| --- | ---  | --- | --- | --- |
-| Usuário 1	| 27 anos| CT 05 | 00:00:00 | - | - | -  | --- |
-| Usuário 2 | 46 anos| CT 05 | 00:00:00 | - | - | -  | --- |
-| Usuário 3	| 21 anos| CT 05 | 00:00:00 | - | - |  - | --- |
-| Usuário 4	| 26 anos| CT 05 | 00:00:00 | - | - |  - | --- |
-| Usuário 5	| 37 anos| CT 05 | 00:00:00 | - | - |  - | --- |
+| Usuário 1	| 27 anos| CT 05 | 00:00:28 | - | - | -  | --- |
+| Usuário 2 | 46 anos| CT 05 | 00:00:30 | - | - | -  | --- |
+| Usuário 3	| 21 anos| CT 05 | 00:00:25 | - | - |  - | --- |
+| Usuário 4	| 26 anos| CT 05 | 00:00:32 | - | - |  - | --- |
+| Usuário 5	| 37 anos| CT 05 | 00:00:38 | - | - |  - | --- |
 
 **CT-06 - Escolher formas de divisão de contas. **
 | **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- 	| --- | ---  | --- | --- | --- |
-| Usuário 1	| 27 anos| CT 06| 00:00:10 | 4 | 0 | - | Sugeriu colocar o nome da comanda de "comanda geral da mesa", pois ficou na dúvida sobre qual comanda era|
+| Usuário 1	| 27 anos| CT 06| 00:00:10 | 4 | 0 | - |---|
 | Usuário 2 | 46 anos| CT 06| 00:00:06 | 5 | 0 | - |---|
 | Usuário 3	| 21 anos| CT 06| 00:00:05 | 4 | 0 | - |---|
 | Usuário 4	| 26 anos| CT 06| 00:00:07 | 5 | 0 | - |---|
