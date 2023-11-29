@@ -1,0 +1,195 @@
+{
+  "pedidos": [
+    {
+      "id": 1,
+      "items": [
+        {
+          "item": "Batata",
+          "preco": "25",
+          "qtd": 1
+        },
+        {
+          "item": "Chiclete",
+          "preco": "25",
+          "qtd": 1
+        },
+        {
+          "item": "Cerveja",
+          "preco": "10",
+          "qtd": 1
+        },
+        {
+          "item": "Pipoca",
+          "preco": "15",
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "pessoas": "2",
+      "gorjeta": 0,
+      "couver": 0,
+      "listaItens": [
+        {
+          "item": "xerca",
+          "preco": "4884",
+          "qtd": 1
+        },
+        {
+          "item": "Victor",
+          "preco": "545454",
+          "qtd": 1
+        }
+      ],
+      "dataFormatada": "2023-11-25",
+      "id": 2
+    },
+    {
+      "pessoas": "2",
+      "gorjeta": 0,
+      "couver": 0,
+      "listaItens": [
+        {
+          "item": "gagshs",
+          "preco": "50",
+          "qtd": 1
+        },
+        {
+          "item": "kakaka",
+          "preco": "50",
+          "qtd": 1
+        }
+      ],
+      "dataFormatada": "2023-11-25",
+      "id": 3
+    },
+    {
+      "pessoas": "2",
+      "gorjeta": 0,
+      "couver": 0,
+      "listaItens": [
+        {
+          "item": "fgh",
+          "preco": "80",
+          "qtd": 1
+        }
+      ],
+      "dataFormatada": "2023-11-25",
+      "id": 4
+    },
+    {
+      "pessoas": "2",
+      "gorjeta": 0,
+      "couver": 0,
+      "listaItens": [
+        {
+          "item": "CERVEJA",
+          "preco": "50",
+          "qtd": 1
+        },
+        {
+          "item": "CIGARRO",
+          "preco": "15",
+          "qtd": 1
+        }
+      ],
+      "dataFormatada": "2023-11-25",
+      "id": 5
+    },
+    {
+      "pessoas": "2",
+      "gorjeta": 0,
+      "couver": 0,
+      "listaItens": [
+        {
+          "item": "GIMBA",
+          "preco": "50",
+          "qtd": 1
+        }
+      ],
+      "dataFormatada": "2023-11-25",
+      "id": 6
+    },
+    {
+      "pessoas": "2",
+      "gorjeta": 0,
+      "couver": 0,
+      "listaItens": [
+        {
+          "item": "CIGARRO",
+          "preco": "20",
+          "qtd": 1
+        }
+      ],
+      "dataFormatada": "2023-11-25",
+      "id": 7
+    },
+    {
+      "pessoas": "2",
+      "gorjeta": 0,
+      "couver": 0,
+      "listaItens": [
+        {
+          "item": "bshs",
+          "preco": "5454",
+          "qtd": 1
+        }
+      ],
+      "dataFormatada": "2023-11-25",
+      "id": 8
+    },
+    {
+      "pessoas": "2",
+      "gorjeta": 0,
+      "couver": 0,
+      "listaItens": [
+        {
+          "item": "gahahs",
+          "preco": "54545",
+          "qtd": 1
+        }
+      ],
+      "dataFormatada": "2023-11-25",
+      "id": 9
+    },
+    {
+      "pessoas": "2",
+      "gorjeta": 0,
+      "couver": 0,
+      "listaItens": [],
+      "dataFormatada": "2023-11-28",
+      "id": 10
+    },
+    {
+      "pessoas": "4",
+      "gorjeta": 0,
+      "couver": 0,
+      "listaItens": [],
+      "dataFormatada": "2023-11-28",
+      "id": 11
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "admin@admin.com",
+      "pass": "123",
+      "user": "admin",
+      "vpass": "123"
+    },
+    {
+      "email": "aa",
+      "pass": "aa",
+      "user": "Pedro",
+      "vpass": "ff",
+      "id": 2
+    },
+    {
+      "email": "teste@teste.com",
+      "pass": "123",
+      "user": "Teste",
+      "vpass": "123",
+      "id": 3
+    }
+  ]
+}
