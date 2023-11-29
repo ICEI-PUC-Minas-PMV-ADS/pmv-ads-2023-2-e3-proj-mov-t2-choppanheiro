@@ -34,7 +34,7 @@
 |    Caso de teste    |CT-06 - Escolher formas de divisão de contas.|
 | Requisito Associado |RF-06 aplicativo deve ser capaz de realizar a divisão da conta de duas formas: igualmente entre todos os membros do grupo "GALERA" ou individualmente "FAZ A BOA".|
 |  Objetivo do Teste  |Verificar a funcionalidade de formas de divisão de contas.|
-|        Tela         |![Uploading forma de pagamento.gif…]()|
+|        Tela         |![forma de pagamento](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro/assets/111931438/0ebbce94-dcd6-4b6f-aacd-c082f1fe088f)|
 |      Observação     |Nenhuma|
 |  	|  	|
 |    Caso de teste    |CT-09 Criação de uma Mesa.<br> CT-10 - Adição de numero de usuários em uma Mesa.<br> CT-07 - Adição de valores gorjeta e Couvert. |
