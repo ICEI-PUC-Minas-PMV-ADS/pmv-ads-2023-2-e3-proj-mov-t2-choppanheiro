@@ -1,0 +1,24 @@
+message: Please cite this software using these metadata.
+title: Choppanheiro
+authors:
+  - family-names: Ramires Guimarães Brito
+    given-names: Amanda
+  - family-names: Amorim Marçal
+    given-names: Geison
+  - family-names: Guilherme dos Reis
+    given-names: Lucas
+  - family-names: Cezar de Almeida dos Santos
+    given-names: Marlon
+  - family-names: Kingma
+    given-names: Victor
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Curcino de Lima
+    given-names: Mateus
+keywords:
+  - Divisão
+  - Conta
+  - Bar
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-choppanheiro
+version: 1.0.0
+date-released: 2023-10-31
